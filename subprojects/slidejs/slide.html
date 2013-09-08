@@ -1,0 +1,62 @@
+<!DOCTYPE html5>
+<head>
+    <title>Slide JS</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="slide_style.css">
+
+  <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+  </style>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="source/jquery.slides.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          auto: true
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="grid wrap">
+    <div class="unit whole center-on-mobiles">
+     <h1> Title One </h1>
+
+      <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
+      <a href="http://slidesjs.com/" target="_blank"><div class="btn2" style="float:left"><p>source button</p></div></a>
+    </div>
+  </div>
+
+  <div class="slide_container">
+  <h1> Slide JS Carousel</h1>
+    <div id="slides">
+      <img src="http://placehold.it/940x528">
+      <img src="http://placehold.it/940x528">
+      <img src="http://placehold.it/940x528">
+      <img src="http://placehold.it/940x528">
+      <img src="http://placehold.it/940x528">
+    </div>
+  </div>
+
+  <div class="50_buffer"></div>
+  <div class="grid wrap">
+    <div class="unit whole center-on-mobiles">
+     <h1> Title Two </h1>
+
+      <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
+      <a href="../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
+    </div>
+  </div>
+</body>

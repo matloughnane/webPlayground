@@ -1,8 +1,8 @@
 /* total pages*/
 
 body {
-	margin: 0px;
 	background-color: #ecf0f1;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 /* buttons */
@@ -10,10 +10,6 @@ body {
 h1 {
 /*	font-size: 100px;
 */}
-
-br {
-	10px
-}
 
 /* general button style */
 
@@ -25,15 +21,19 @@ br {
 	background: none;
 	padding: 0px 10px;
 	display: inline-block;
-/*	margin: 10px 5px;*/
+	margin: 10px 5px;
 	text-transform: uppercase;
+	text-decoration: none;
 /*	letter-spacing: 1px;*/
-	font-weight: 70;
+/*	font-weight: 20;*/
 	outline: none;
 	position: relative;
 	border-radius: 5px;
 	background-color: #cb4e4e;
 	box-shadow: 0 5px #852f2f;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 a .btn p {
@@ -58,20 +58,24 @@ a .btn p {
 .btn2 {
 	border: none;
 	font-family: inherit;
-	font-size: 1em;
+	font-size: 0.75em;
 	color: inherit;
 	background: none;
 	padding: 0px 10px;
 	display: inline-block;
-/*	margin: 10px 5px;*/
+	margin: 10px 5px;
 	text-transform: uppercase;
+	text-decoration: none;
 /*	letter-spacing: 1px;*/
-	font-weight: 70;
+/*	font-weight: 20;*/
 	outline: none;
 	position: relative;
 	border-radius: 5px;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
 	background-color: #cb4e4e;
-	box-shadow: 0 5px #852f2f;
+	box-shadow: 0 4px #852f2f;
 }
 
 a .btn2 p {
@@ -81,8 +85,8 @@ a .btn2 p {
 
 .btn2:hover {
 	box-shadow: 0 4px #852f2f;
-/*	background-color: #d16262;*/
-	top: 1px;
+	background-color: #d16262;
+	top: 0px;
 }
 
 .btn2:active {
@@ -100,8 +104,9 @@ a .btn2 p {
 	background: none;
 	padding: 0px 10px;
 	display: inline-block;
-/*	margin: 10px 5px;*/
+	margin: 10px 5px;
 	text-transform: uppercase;
+	text-decoration: none;
 /*	letter-spacing: 1px;*/
 	font-weight: 70;
 	outline: none;
@@ -109,6 +114,9 @@ a .btn2 p {
 	border-radius: 3px;
 	background-color: #cb4e4e;
 	box-shadow: 0 0 #852f2f;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
 }
 
 a .btn3 p {
@@ -118,11 +126,62 @@ a .btn3 p {
 
 .btn3:hover {
 	box-shadow: 0 3px #852f2f;
-/*	background-color: #d16262;*/
-	top: 0px;
+	background-color: #d16262;
+	top: px;
 }
 
 .btn3:active {
 	box-shadow: 0 0 #852f2f;
 	top: 3px;
 }
+
+
+/*Button 3 style*/
+
+.btn4 {
+	border: none;
+	font-family: inherit;
+	font-size: 1em;
+	color: inherit;
+	background: none;
+	padding: 0px 10px;
+	display: inline-block;
+	margin: 10px 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+/*	letter-spacing: 1px;*/
+	font-weight: 70;
+	outline: none;
+	position: relative;
+	border-radius: 3px;
+	background-color: #cb4e4e;
+	box-shadow: 0 0 #852f2f;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+a .btn4 p {
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.btn4:hover {
+/*	box-shadow: 0 3px #852f2f;*/
+/*	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+    -moz-box-shadow:inset 0px 0px 0px 10px #f00;*/
+    box-shadow: 0px -3px 0px 0px #852f2f inset;
+	outline: 0 6px #852f2f;
+	background-color: #d16262;
+/*	border-bottom: solid 3px #852f2f;*/
+	top: 0px;
+}
+
+.btn4:active {
+	box-shadow: 0 0 #852f2f;
+	background-color: #852f2f;
+	top: 0px;
+}
+
+/* Colors */
+

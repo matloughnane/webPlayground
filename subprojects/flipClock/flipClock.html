@@ -1,0 +1,51 @@
+<!DOCTYPE html5>
+<head>
+    <title>Flip Clock JS</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="flip_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/flipclock.css">
+
+<!--  <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+  <script src="assets/jquery.js"></script>
+  <script src="assets/base.js"></script>
+  <script src="assets/flipclock.min.js"></script>
+  <script src="assets/prefixfree.min.js"></script>
+
+  <script src="assets/faces/DailyCounter.js"></script>
+  <script src="assets/faces/HourlyCounter.js"></script>
+  <script src="assets/faces/MinuteCounter.js"></script>
+  <script src="assets/faces/TwelveHourClock.js"></script>
+  <script src="assets/faces/TwentyFourHourClock.js"></script>
+
+</head>
+
+<body>
+
+  <div class="grid wrap">
+    <div class="unit whole center-on-mobiles">
+     <h1> Flip Clock </h1>
+
+      <p>Works in Firefox (with jagged edges)</p>
+      <p>Doesn't count correctly in Chrome - shadows instead of animations (with jagged edges)</p>
+      <a href="http://flipclockjs.com/" target="_blank"><div class="btn2" style="float:left"><p>source button</p></div></a>
+    </div>
+  </div>
+
+  <div class="grid wrap">
+    <div class="unit whole center-on-mobiles">
+     <h1> Title Two </h1>
+      <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
+      <a href="../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
+    </div>
+  </div>
+
+  <div class="your-clock"></div>
+
+    <script>
+    var clock = $('.your-clock').FlipClock({
+    // ... your options here
+    });
+  </script>
+
+</body>

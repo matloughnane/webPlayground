@@ -23,24 +23,30 @@
 <body>
 
   <div class="grid wrap">
-    <div class="unit whole center-on-mobiles">
+    <div class="unit whole">
      <h1> Flip Clock </h1>
 
       <p>Works in Firefox (with jagged edges)</p>
-      <p>Doesn't count correctly in Chrome - shadows instead of animations (with jagged edges)</p>
+      <p>Works correctly in Chrome</p>
+      <p>Works correctly in Safari</p>
+      <p>Doesn't count correctly in Chrome Offline - shadows instead of animations (with jagged edges)</p>
       <a href="http://flipclockjs.com/" target="_blank"><div class="btn2" style="float:left"><p>source button</p></div></a>
     </div>
   </div>
 
   <div class="grid wrap">
-    <div class="unit whole center-on-mobiles">
+    <div class="unit whole">
      <h1> Title Two </h1>
       <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
       <a href="../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
     </div>
   </div>
 
-  <div class="your-clock"></div>
+  <div class="grid wrap">
+    <div class="unit whole">
+      <div class="your-clock"></div>
+    </div>
+  </div>
 
     <script>
     var clock = $('.your-clock').FlipClock({

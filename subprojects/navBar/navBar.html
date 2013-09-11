@@ -1,0 +1,70 @@
+<!DOCTYPE html5>
+<head>
+    <title>Nav Bar</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="clearfix"> 
+    <ul class="clearfix">  
+        <li><a href="#">Long Title With Spaces</a></li>  
+        <li><a href="#">How-to</a></li>  
+        <li><a href="#">Icons</a></li>  
+        <li><a href="#">Design</a></li>  
+<!--         <li><a href="#">Web 2.0</a></li>  --> 
+<!--         <li><a href="#">Tools</a></li>  -->   
+    </ul>  
+    <a href="#" id="pull">Menu</a>  
+</nav>  
+
+  <div class="grid wrap">
+    <div class="unit whole">
+     <h1> Nav Bar Content </h1>
+      <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
+      <a href="../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
+      <a href="navBar_Bootstrap/navBar_bootstrap.html"><div class="btn2" style="float:right"><p>bootstrap navBar</p></div></a>
+    </div>
+  </div>
+
+  <div class="grid wrap">
+    <div class="unit whole">
+     <h1> Bootstrap Nav Bar </h1>
+    </div>
+  </div>
+
+  <div class="grid wrap">
+    <div class="unit whole">
+      <div class="your-clock"></div>
+    </div>
+  </div>
+
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+
+
+</body>

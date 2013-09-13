@@ -37,9 +37,9 @@ nav li {
 nav a {  
     color: #fff;  
     display: inline-block;  
-    /*width: 150px; */ 
-    margin: 0 auto;
+    /*width: 150px; */
     padding: 0 20px;
+    margin: 0 auto;
     text-align: center;  
     text-decoration: none;  
     line-height: 40px;  
@@ -112,7 +112,8 @@ nav a#pull {
     nav a {  
         text-align: left;  
         width: 100%;  
-        text-indent: 15%;  
+        text-indent: 15%;
+        padding: 0px;
     }  
 }  
 
@@ -134,7 +135,7 @@ nav a#pull {
         background: #cb4e4e;
         text-align: left;
         width: 100%;  
-        text-indent: 15%;  
+        text-indent: 5%; 
     } 
     nav a#pull {  
         display: block;  
@@ -160,10 +161,11 @@ nav a#pull {
         display: block;  
         float: none;  
         width: 100%;
-        border-bottom: 1px solid #852f2f; 
+        border-bottom: 1px solid #852f2f;
     }  
     nav li a {  
         border-bottom: 1px solid #cb4e4e;
     }  
 }
+
 

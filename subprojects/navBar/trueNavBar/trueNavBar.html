@@ -6,24 +6,81 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="responsive-nav.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/gridism.css">
+
     <script src="responsive-nav.min.js"></script>
   </head>
-  <body>
 
-    <div id="nav">
+<body class="wrap wider">
+
+<div class="grid">
+  <div class="unit whole">
+<!--   <div id="nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-    </div>
+  </div> -->
+  </div>
+</div>
 
-    <div class="unit whole" style="clear:both; padding-top:0.05em;">
+<div class="grid">
+  <div class="unit one-quarter hide-on-mobiles">
+    <div style="background-color:#cb4e4e;height:80px"> LOGO </div>
+  </div>
+  <div class="unit three-quarters">
+      <div id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+
+<div class="grid">
+  
+  <div class="unit whole" style="clear:both; padding-top:0.05em;">
      <h1> Nav Bar Content </h1>
       <p>Proin vulputate scelerisque magna, eget hendrerit velit vulputate non. Morbi at condimentum tellus, id iaculis nisl. Fusce malesuada lobortis nunc ut hendrerit. Praesent eu purus magna. Vestibulum vulputate viverra euismod. Cras lobortis dolor lectus, eget fermentum nisl semper non. Aliquam nec sagittis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in ante laoreet, porttitor arcu vel, egestas magna. Fusce ornare sodales arcu id congue. Fusce lacinia eleifend erat at congue.</p>
-      <a href="../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
-    </div>
+      <a href="../../../index.html"><div class="btn2" style="float:right"><p>back button</p></div></a>
+  </div>
+
+</div>
+
+<div class="grid">
+  <div class="unit one-third">
+    <div style="background-color:#3498db;"> One Thirds </div>
+  </div>
+  <div class="unit two-thirds">
+    <div style="background-color:#3498db;"> Two Thirds </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="unit one-quarter">
+    <div style="background-color:#27ae60;"> One Quarter </div>
+  </div>
+  <div class="unit three-quarters">
+    <div style="background-color:#27ae60;"> Three Quarters </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="unit one-fifth">
+    <div style="background-color:#f1c40f;"> One Fifth </div>
+  </div>
+  <div class="unit four-fifths">
+    <div style="background-color:#f1c40f;"> Four Fifth </div>
+  </div>
+</div>
+
 
     <script>
       var navigation = responsiveNav("#nav", {

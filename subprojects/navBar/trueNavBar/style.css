@@ -107,7 +107,7 @@ body {
   user-select: none;
   width: 70px;
   height: 55px;
-  float: left;
+  float: right;
   text-indent: -9999px;
   overflow: hidden;
   background: #cb4e4e url("hamburger.gif") no-repeat 50% 50%;

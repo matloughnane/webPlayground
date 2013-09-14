@@ -5,7 +5,8 @@
 html {background:transparent;}
 body {padding:7px 0; font:62.5%/1 "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; color:#707070;}
 
-#wrapper {position:relative; margin:0 auto; width:690px;}
+#wrapper {position:relative; margin:0 auto; max-width:900px;}
+
 #top {margin:0 auto; height:3px; width:680px; background:url(http://static.tumblr.com/iqfzjqj/KHnkkt8kp/shadowtop.png) -5px top repeat-x;}
 #topLeft {position:absolute; top:0; left:0; z-index:1; height:8px; width:5px; background:url(http://static.tumblr.com/iqfzjqj/KHnkkt8kp/shadowtop.png) left top no-repeat;}
 #topRight {position:absolute; top:0; right:0; z-index:1; height:8px; width:5px; background:url(http://static.tumblr.com/iqfzjqj/KHnkkt8kp/shadowtop.png) right top no-repeat;}
@@ -30,7 +31,7 @@ a:hover,
 #pageNav a:hover span {color:#000;}
 .content a,
 .notes li a,
-#credit a {font-weight:bold;}
+#credit a {display:none; font-weight:bold;}
 .metaList li.tagged a,
 .meta a span,
 .metaAudio a span,
@@ -229,8 +230,8 @@ a#descriptionToggle {display:none; position:absolute; top:75px; right:40px; widt
 #searchForm #searchField {width:172px; height:13px; padding:2px 3px 3px 3px; border:1px solid #dcdcdc; font-size:110%;}
 #searchForm #searchSubmit {position:absolute; top:2px; right:0; width:16px; height:16px; background:#bfbfbf url(http://static.tumblr.com/iqfzjqj/o4Akkt86m/iconlink.png) left top no-repeat;  -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;}
 #footerNav li#tumblr a {display:block; width:59px; height:14px; text-indent:-9999px; line-height:1;}
-#credit {clear:both; margin-top:46px;}
-#credit a {border-bottom:1px dotted #dcdcdc;}
+#credit {display:none; clear:both; margin-top:46px;}
+#credit a {display:none; border-bottom:1px dotted #dcdcdc;}
 
 /* Twitter */
 #twitter {display:none;}

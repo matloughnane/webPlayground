@@ -1,0 +1,145 @@
+/*! responsive-nav.js v1.0.20 by @viljamis */
+
+/*  NAVIGATION FOR MOBILE DEVICES  */
+
+#nav,
+#nav * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#nav,
+#nav ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+#nav a:hover {
+  background-color: #d16262;
+}
+
+#nav-toggle {
+    display: hidden;
+  }
+
+#nav ul ul a {
+  background: #ca3716;
+/*  padding-left: 2em;*/
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  background: #cb4e4e;
+  padding: 0.5em 1em;
+  float: left;
+  font-size: 1em;
+}
+
+#nav li {
+  float: left;
+  width: 100%;
+}
+#nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 45px;
+  height: 40px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+/*  background-color: #cb4e4e;*/
+  background: #cb4e4e url("../img/hamburger.gif") no-repeat 50% 50%;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+#nav li {
+  width: 100%;
+  display: block;
+}
+
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+.mobile-menu-bar {
+  background-color: #cb4e4e;
+  height: 40px;
+}
+
+/*  MEDIA NON MOBILE DEVICES  */
+
+@media screen and (min-width: 640px) {
+
+  #nav ul {
+    padding-top: 50px;
+  }
+
+  #nav ul ul a {
+    display: none;
+  }
+
+  #nav a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 0 #852f2f;
+    border: solid 1px #d16262;
+  }
+
+  #nav li {
+    width: 25%;
+    *width: 24.9%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
+
+  #nav-toggle {
+    background-image: url("../img/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px;
+  }
+
+  .js #nav {
+    position: relative;
+  }
+  .js #nav.closed {
+    max-height: none;
+  }
+  #nav-toggle {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 990px) {
+  #nav ul {
+    padding-top: 25px;
+  }
+}

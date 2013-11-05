@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- CSS -->
+  <link rel="stylesheet" href="assets/css/gridism.css">
+  <link rel="stylesheet" href="assets/css/responsive-nav.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/slide_style.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  	<!-- WEB -->
+  <title>Bar Site</title>
+</head>
+
+<body>
+<!-- RESPONSIVE NAV -->
+<div class="wrap wider">
+<div class="grid">
+  <div class="unit one-third no-gutters">
+    <img class="ri" src="http://placehold.it/390x140">
+  </div>
+  <div class="unit two-thirds no-gutters">
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-bar hide-until-mobile"></div>
+  </div>
+</div>
+</div>
+
+<div class="wrap wider">
+<div class="grid">
+<!--   <div class="unit half">
+    <div class="content_image">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item"><img src="http://placehold.it/840x480" alt="Image1"></div>
+      <div class="item"><img src="http://placehold.it/840x480" alt="Image2"></div>
+      <div class="item"><img src="http://placehold.it/840x480" alt="Image3"></div>
+    </div>
+    </div>
+  </div> -->
+
+  <div class="unit half">
+    <div class="content_text">
+      <p>Early's Bar is a family run pub situated on the idyllic island of Arranmore, County Donegal. Steeped in history and legendary for it's music and craic, Early's Bar is the perfect spot to relax, have fun and forget your worries for a while. With that unmistakable charm of the traditional Irish pub, relaxed and calm in it's own way, Early's can also have a vibrancy and energy which can create happy memories that will last a lifetime.</p>
+      <p>Less than a two minute walk form the ferry pier on the island, Early's Bar is the ideal location for a quiet drink on a day-trip to Arranmore. Bar food is served on the premises including their well renowned stone baked pizzas. Every evening the bar is a regular spot for both locals and tourists alike and you will always be guaranteed an enjoyable night and a bit of craic when the guitar is brought out for a sing-song. Early's Bar has entertainment every weekend with disco's and live music in the lounge and impromptu sessions in the bar. So the next time you are in Donegal, make your way to Arranmore, leave your worries behind you and drop in for a visit.</p>
+    </div>
+      <div class="content_text show_on_large_screens">
+        LEFT
+      </div>
+  </div>
+  <div class="unit half">
+    <div class="content_image">
+    <div class="slide_container">
+        <div id="slides">
+          <img src="http://placehold.it/940x528">
+          <img src="http://placehold.it/940x528">
+          <img src="http://placehold.it/940x528">
+          <img src="http://placehold.it/940x528">
+          <img src="http://placehold.it/940x528">
+        </div>
+    </div>
+    </div>
+    <div class="content_text show_on_medium_screens">
+      RIGHT
+    </div>
+  </div>
+  </div>
+<div class="grid wrap unit whole">
+  <div class="content_text">
+      <p>Check out the latest news here</p>
+  </div>
+</div>
+</div>
+
+<!-- JS SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="assets/js/responsive-nav.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.slides.min.js"></script>
+<!-- NAV JS -->
+<script>
+  var navigation = responsiveNav("#nav", {
+    animate: true,        // Boolean: Use CSS3 transitions, true or false
+    transition: 400,      // Integer: Speed of the transition, in milliseconds
+    label: "Menu",        // String: Label for the navigation toggle
+    insert: "before",      // String: Insert the toggle before or after the navigation
+    customToggle: "",     // Selector: Specify the ID of a custom toggle
+    openPos: "static",  // String: Position of the opened nav, relative or static
+    jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+    init: function(){},   // Function: Init callback
+    open: function(){},   // Function: Open callback
+    close: function(){}   // Function: Close callback
+  });
+</script>
+
+<!-- CAROUSEL JS -->
+<script>
+    $(document).ready(function() {
+  $("#owl-demo").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+  });
+});
+</script>
+<!-- END JS -->
+
+<!-- SLICK NAV -->
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          auto: true
+        }
+      });
+    });
+  </script>
+<!-- END SLICK -->
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/gridism.css">
+  <link rel="stylesheet" href="../assets/css/responsive-nav.css">
+  <link rel="stylesheet" href="../assets/css/slide_style.css">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  	<!-- WEB -->
+  <title>Bar Site</title>
+</head>
+
+<body>
+
+<!-- RESPONSIVE NAV -->
+<div class="wrap wider">
+<div class="grid">
+  <div class="unit w-1-4 no-gutters">
+    <img class="ri" src="http://placehold.it/390x140">
+  </div>
+  <div class="unit w-3-4 no-gutters">
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Visit Us</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-bar hide-until-mobile"></div>
+  </div>
+</div>
+</div>
+
+<div class="wrap content">
+  <div class="grid content_frame">
+      <div class="unit w-1-2">
+          <div class="text_front_page">
+            <h1>Visit Us</h1>
+             <p>We are easy to find once you get to the island. Only a short walk from the ferry pier you are as good as at the bar once you step on the island. Below is some useful information on getting to the island and an interactive location map showing where we are.</p>
+             <p>There are regular ferry services to the island from Burtonport starting early in the morning and running almost hourly throughout the day. Timetables can be found at the harbour in Burtonport, or you can contact the ferry operators directly for more information.</p>
+             <p>Arranmore Car &Passenger Ferry Service <br>
+              Tel: 00353 74 9542233 / 00353 74 9520532 <br>
+              <a href="http://www.arranmoreferry.com" target="_blank">www.arranmoreferry.com</a><br></p>
+             <p>Arranmore Fast Ferry Service <br>
+              Tel: 00353 87 3171810 <br>
+              <a href="http://www.arranmorefastferry.com" target="_blank">www.arranmorefastferry.com</a><br></p>
+             <p></p>
+        </div>
+      </div>
+      <div class="unit w-1-2">
+        <div class="text_front_page">
+          <h1>Map</h1>
+          <img class="ri space" src="http://placehold.it/840x640">
+        </div>
+      </div>
+  </div>
+  <div class="grid content_frame">
+      <div class="unit w-1-2">
+          <div class="text_front_page">
+            <h1>Contact Us</h1>
+             <p>Early's Bar, <br>
+                Leabgarrow, <br>
+                Arranmore Island, <br>
+                County Donegal. <br>
+                Ireland.</p><br>
+             <p>email: jerryearly@hotmail.com</p> <br>
+             <p>Tel: 074 9520515 </p><br>
+             <p>(00 353 74 9520515 from outside of Rep. of Ireland)</p> <br>
+        </div>
+      </div>
+      <div class="unit w-1-2">
+        <div class="text_front_page">
+          <h1>Contact Form</h1>
+          <img class="ri space" src="http://placehold.it/840x640">
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="wrap wider">
+  <div class="grid whole footer">
+  <div class="unit w-1-3">
+    <h4>Share your bar stories with us...</h4>
+  </div>
+  <div class="unit w-2-3">
+    <a href="#"><div class="btn social red float_right">Instagram</div></a>
+    <a href="#"><div class="btn social red float_right">Google+</div></a>
+    <a href="#"><div class="btn social red float_right">Twitter</div></a>
+    <a href="#"><div class="btn social red float_right">Facebook</div></a>
+  </div>
+  </div>
+</div>
+
+<!-- JS SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../assets/js/responsive-nav.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/jquery.slides.min.js"></script>
+<!-- NAV JS -->
+<script>
+  var navigation = responsiveNav("#nav", {
+    animate: true,        // Boolean: Use CSS3 transitions, true or false
+    transition: 400,      // Integer: Speed of the transition, in milliseconds
+    label: "Menu",        // String: Label for the navigation toggle
+    insert: "before",      // String: Insert the toggle before or after the navigation
+    customToggle: "",     // Selector: Specify the ID of a custom toggle
+    openPos: "static",  // String: Position of the opened nav, relative or static
+    jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+    init: function(){},   // Function: Init callback
+    open: function(){},   // Function: Open callback
+    close: function(){}   // Function: Close callback
+  });
+</script>
+<!-- END NAV -->
+<!-- SLICK NAV -->
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          auto: true
+        }
+      });
+    });
+  </script>
+<!-- END SLICK NAV -->
+
+</body>
+
+</html>

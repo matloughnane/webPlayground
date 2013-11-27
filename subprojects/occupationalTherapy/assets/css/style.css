@@ -1,53 +1,12 @@
 body {
 	font-family:Helvetica, Arial, sans-serif;
 	margin:0;
-/*	padding:0;*/
 	font-size:100%;
+ 	background-color: rgba(236, 240, 241, 1.0);
 }
 
-/*  NAVIGATION  */
-
-.slicknav_menu {
-	display:none;
-}
-
-.nav_container {
-	text-align: center;
-}
-
-ul {
-	margin: 0px;
-	padding: 10px 20px; 
-	list-style-type: none;
-	text-align: center;
-	background-color: #2980b9;
-}
-
-ul li {  
-	display: inline-block;
-}
-
-ul li a { 
-	text-decoration: none;
-/*	text-transform: uppercase;*/
-	text-shadow: 0 1px 1px #34495e;	
-	color: #fff; 
-	background-color: #2980b9;
-	padding: 10px 30px;
-}
-
-ul li a:hover { 
-	background-color: #3498db; 
-}
-
-@media screen and (max-width: 640px) {
-	.js #menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
+a {
+	padding: 0px;
 }
 
 /*  IMAGES  */
@@ -65,3 +24,63 @@ img.ri:empty {
 	-o-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);
 }
+
+/*COLOURS*/
+/*
+LIGHTEST: #3498db
+MAIN BLUE: #2980b9
+DARKEST BLUE: #20638f
+*/
+
+/*  BUTTONS   */
+
+.btn {
+	padding: auto;
+	margin: 0px auto;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+a .btn {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 0.8em
+}
+
+.btn:hover {
+  outline: 0 6px #852f2f;
+  top: 0px;
+}
+
+.btn:active {
+  box-shadow: 0 0 #852f2f;
+  top: 0px;
+}
+
+.blue {
+	background-color: #2980b9;
+}
+
+.blue:hover {
+	background-color: #3498db;
+	box-shadow: 0px -2px 0px 0px #20638f inset;
+}
+
+.blue:active {
+	background-color: #2980b9;
+}
+
+
+/*  SIDEBAR LINKS  */
+
+
+
+
+
+
+

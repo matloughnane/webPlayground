@@ -1,7 +1,14 @@
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+/*  GENERAL  */
+
 body {
   font-family: Helvetica, Arial, sans-serif;
-/*  margin: 0;*/
-  background: #00ff00 url('../img/broken_noise.png')
+  background: #2c3e50 url('../img/broken_noise.png')
 }
 
 a:active,
@@ -9,11 +16,83 @@ a:hover {
   outline: 0;
 }
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
+h1 {
+  display: inline;
+}
+
+h2 {
+  display: inline;
+  padding: 0px;
+}
+
+h3 {
+  display: inline;
+  padding: 3px;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/*  FLOATERS  */
+
+.float_right {
+  float: right;
+}
+
+.float_left {
+  float: left;
+}
+
+/*  BUTTONS  */
+
+.btn {
+  padding: 7px 10px;
+  display: inline-block;
+  margin: 5px 3px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+a .btn {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 0.8em
+}
+
+.btn:hover {
+  box-shadow: 0px -3px 0px 0px #852f2f inset;
+  outline: 0 6px #852f2f;
+  top: 0px;
+}
+
+.btn:active {
+  box-shadow: 0 0 #852f2f;
+  top: 0px;
+}
+
+.social {
+  margin: 10px 20px;
+}
+
+.red {
+  background-color: #cb4e4e;
+  box-shadow: 0 0 #852f2f;
+}
+
+.red:hover {
+  background-color: #d16262;
+}
+
+.red:active{
+  background-color: #852f2f;
+}
+
+/*  RESPONSIVE IMAGES  */
 
 img.ri {
   position: relative;
@@ -21,6 +100,9 @@ img.ri {
 }
 
 img.ri:empty {
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
@@ -29,71 +111,85 @@ img.ri:empty {
   transform: translate(-50%, 0%);
 }
 
-.content_text {
-  margin: 15px 0 0 0;
-  padding: 10px;
-  background-color: #ecf0f1;
-  font-size: 0.8em;
-  clear: both;
+.space {
+  margin-bottom: 10px;
 }
 
-.content_image {
-  margin: 15px 0 0 0;
+/*  FRONT PAGE CONTENT  */
+
+.header {
+  background-color: #cb4e4e;
+  color: #fff;
+  padding: 0.5em;
+  box-shadow: 0px -3px 0px 0px #852f2f inset;
+  -moz-box-shadow: 0px -3px 0px 0px #852f2f inset;
+  -webkit-box-shadow: 0px -3px 0px 0px #852f2f inset;
+}
+
+.text_front_page {
+  padding: 2.5em 1em 1em 1em;
+  font-size: 1em;
+}
+
+.content {
+  margin: 10px 0 10px 0;
   padding: 5px;
-  background-color: #ecf0f1;
-  clear: both;
+}
+.content_frame {
+  background-color: rgba(236, 240, 241, 1.0);
 }
 
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 0px 50px;
 }
 
-@media (min-width: 640px) and (max-width: 1180px) {
-  .show_on_large_screens {
-    display: none;
-  }
-  .show_on_medium_screens {
-    height:110px
-  }
+.footer_text {
+  background-color: #2c3e50;
 }
 
-@media (min-width: 790px) and (max-width: 1180px) {
-  .show_on_large_screens {
-    display: none;
-  }
-  .show_on_medium_screens {
-    display: none;
-  }
-}
+/*  MEDIA QUERY: INC IPAD  */
 
-@media (min-width: 1180px) {
-  .show_on_large_screens {
-    height: 60px;
+@media (min-width: 641px) and (max-width: 1180px) {
+  .text_front_page {
+    padding: 1.5em 1em 1em 1em;
+    font-size: 0.9em;
   }
-  .show_on_medium_screens {
-    display: none;
+  .footer {
+    margin-bottom: 0px;
+    padding: 0px 5px;
+  }
+  .h4 {
+    font-size: 0.5em;
+  }
+  .space {
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 640px) {
-  .content_text {
-    margin: 5px;
-    padding: 5px;
-    background-color: #ecf0f1;
+/*  MEDIA QUERY MOBILE  */
+
+@media (max-width: 640px) {
+  .text_front_page {
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 0.85em;
+  }
+  .footer {
+    margin-bottom: 0px;
+    padding: 0px 5px;
     font-size: 0.75em;
   }
-
-  .content_image {
-    margin: 5px 0 0 0;
-    padding: 5px;
-    background-color: #ecf0f1;
+  h4 {
+    padding: 0;
+    display: block;
+    -webkit-margin-before: 0.9em;
+    -webkit-margin-after: 0.9em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
   }
-  .show_on_large_screens {
-    display: none;
-  }
-  .show_on_medium_screens {
-    display: none;
+  .social {
+    margin: 2px;
   }
 }

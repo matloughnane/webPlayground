@@ -1,0 +1,40 @@
+/* line 12, ../sass/sass_styles.scss */
+body {
+  background-color: #ecf0f1;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+/* line 18, ../sass/sass_styles.scss */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: 1em;
+  background: none;
+  padding: 0px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 70;
+  outline: none;
+  position: relative;
+  border-radius: 3px;
+  background-color: #cb4e4e;
+  box-shadow: 0 0 #852f2f;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 38, ../sass/sass_styles.scss */
+.btn:hover {
+  box-shadow: 0px -3px 0px 0px #852f2f inset;
+  outline: 0 6px #852f2f;
+  background-color: #d16262;
+}
+/* line 43, ../sass/sass_styles.scss */
+.btn:active {
+  background-color: #852f2f;
+  top: 0px;
+}

@@ -1,0 +1,47 @@
+// cloud flat ui colour 
+$bkg-color: #ecf0f1;
+// reds from buttons colour
+// light red
+$btn-color: #cb4e4e;
+// hover red
+$btn-hover-color: #d16262;
+// dark red
+$btn-color-pressed: #852f2f;
+
+// transition
+$transition: all 0.1s;
+
+
+body {
+	background-color: $bkg-color;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.btn {
+	border: none;
+	background: none;
+	padding: 0px 10px;
+	display: inline-block;
+	margin: 8px 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $bkg-color;
+	outline: none;
+	position: relative;
+	border-radius: 3px;
+	background-color: $btn-color;
+	box-shadow: 0 0 $btn-color-pressed;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $btn-color-pressed inset;
+		outline: 0 6px $btn-color-pressed;
+		background-color: $btn-hover-color;
+	}
+	&:active {
+		background-color: $btn-color-pressed;
+		top: 0px;
+	}
+}

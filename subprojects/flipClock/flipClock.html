@@ -49,9 +49,14 @@
   </div>
 
     <script>
-    var clock = $('.your-clock').FlipClock({
-    // ... your options here
-    });
+      var date  = new Date(Date.UTC(2014, 8, 30, 12, 0, 0));
+      var now   = new Date();
+      var diff  = date.getTime()/1000 - now.getTime()/1000;
+
+      var clock = $('.clock').FlipClock(diff, { // <-- DID YOU MEAN FlipClock
+      clockFace: 'DailyCounter',
+      countdown: true
+    }
   </script>
 
 </body>

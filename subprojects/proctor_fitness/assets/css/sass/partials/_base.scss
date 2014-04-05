@@ -251,6 +251,9 @@ Nav Panel
 	  a {
 	  	color: $bkg_color;
 	  	padding: 1em;
+	  	&.nav_link {
+	  		font-size: 1em;
+	  	}
 	  	}
 	}
 }

@@ -311,8 +311,12 @@ Nav Panel
   color: #ecf0f1;
   padding: 1em;
 }
+/* line 254, sass/partials/_base.scss */
+.panel ul a.nav_link {
+  font-size: 1em;
+}
 
-/* line 258, sass/partials/_base.scss */
+/* line 261, sass/partials/_base.scss */
 .nav-icon {
   margin-right: 6px;
 }

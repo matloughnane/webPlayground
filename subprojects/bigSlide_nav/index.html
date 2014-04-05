@@ -1,0 +1,50 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Big Slide Nav</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+<!--     <link rel="stylesheet" type="text/css" href="assets/css/#.css"> -->
+
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bigSlide.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+<div class="wrapper push hide-until-mobiles">
+  <a href="#menu" class="menu-link">&#9776;</a>
+</div>
+
+<nav id="menu" class="panel" role="navigation">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">The Ballad of El Goodo</a></li>
+        <li><a href="#">Thirteen</a></li>
+        <li><a href="#">September Gurls</a></li>
+        <li><a href="#">What's Going Ahn</a></li>
+    </ul>
+</nav>
+
+<div class="wrapper push">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<!-- BIG SLIDE MENU -->
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+  </body>
+</html>

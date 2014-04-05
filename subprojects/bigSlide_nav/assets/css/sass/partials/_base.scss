@@ -1,0 +1,190 @@
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+// BASIC FORMATTING
+body {
+	font-family: 'Rambla', sans-serif;
+	background-color: $bkg_color;
+	margin: 0px;
+	text-align: 10px;
+}
+
+h1 {
+	color: $bkg_color;
+	font-size: 3em;
+	padding: 10px;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Logo
+
+// Navigation
+
+.full_bar {
+	width: 100%;
+	background-color: $main_color;
+}
+
+.nav {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	ul {
+		padding: 0px;
+		margin: 0px;		
+	}
+	li {
+		display: inline;
+		padding: 10px;
+		margin: 0px;
+		&:hover {
+			box-shadow: 0px -5px 0px 0px $main_color_dark inset;
+		}
+		&:active {
+			background-color: $main_color_dark;
+		}
+	}
+	a {
+		color: $bkg_color;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 50px;
+		margin: 0px;
+	}
+}
+
+// DIV CONTAINERS
+
+img.ri {
+	max-width: 30%;
+}
+
+
+// MEDIA QUERY
+
+@media screen and (max-width: 640px) {
+	h1 {
+		color: $bkg_color;
+		font-size: 2em;
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+
+
+
+/*
+Masthead
+======================================
+*/
+
+.wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-link {
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.menu-link:link,
+.menu-link:visited {
+	// button css
+}
+
+.menu-link:hover,
+.menu-link:active {
+	// button css
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+.btn-list {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.btn-list li {
+  display: inline-block;
+}
+
+.btn-list li:first-of-type {
+  margin-right: 1em;
+}
+
+.btn {
+  padding: 1em .5em;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.btn:link,
+.btn:visited {
+  background: #25B89A;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background: #16a085;
+}
+
+/*
+Nav Panel
+======================================
+*/
+
+.panel {
+  background: $main_color;
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em; /*or width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+}
+
+.panel ul {
+  // border-top: 2px solid #34495D;
+
+}
+
+.panel a {
+  display: block;
+  border-bottom: 2px solid #34495D;
+  padding: 1em;
+}
+
+.panel a:link,
+.panel a:visited {
+  color: #fff;
+}
+
+.panel a:hover,
+.panel a:active {
+  background: #25B89A;
+}
+
+.nav-icon {
+  margin-right: 6px;
+}

@@ -8,14 +8,14 @@
 
 // BASIC FORMATTING
 body {
-	font-family: 'Rambla', sans-serif;
-	background-color: $bkg_dark;
+	font-family: 'Rambla',sans-serif;
+	background-color: $bkg_color;
 	margin: 0px;
 	text-align: 10px;
 }
 
 h1 {
-	color: $bkg_color;
+	color: $bkg_dark;
 	font-size: 3em;
 	padding: 10px;
 }
@@ -25,98 +25,70 @@ p {
 }
 
 a {
+	font-size: 14px;
 	text-decoration: none;
 }
 
-
-// Navigation
-
-.full_bar {
-	width: 100%;
-	background-color: $main_color;
+.italics {
+	font-style: italic;
+	font-size: 1em;
 }
 
-.nav {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
+.bold_statement {
+	letter-spacing: 2px;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+.footer_bar {
 	text-align: center;
-	ul {
-		padding: 0px;
-		margin: 0px;		
+	background-color: $main_color;
+	padding: 10px;
+	span {
+		color: $bkg_color_lighter;
+		font-size: 12px;
+		padding: 5px;
 	}
-	li {
-		display: inline;
-		padding: 10px;
-		margin: 0px;
-		&:hover {
-			box-shadow: 0px -5px 0px 0px $main_color_dark inset;
-		}
-		&:active {
-			background-color: $main_color_dark;
-		}
-	}
-	a {
-		color: $bkg_color;
-		display: inline-block;
-		text-decoration: none;
-		text-transform: uppercase;
-		padding: 10px 35px;
-		margin: 0px;
-	}
-}
-
-// DIV CONTAINERS
-
-img.ri {
-	max-width: 30%;
 }
 
 .content {
-	background-color: $bkg_color;
-	height: 250px;
+	background-color: $bkg_color_lighter;
 }
 
-.sidebar {
+.content_secondary {
+	color: $bkg_color_lighter;
+	background-color: $main_color_dark;
+}
+
+.content_tertiary {
+	color: $bkg_color_lighter;
 	background-color: $main_color_accent;
-	height: 250px;
 }
 
-.location {
-	background-color: $bkg_color;
-	height: 350px;
+.fixed_280 {
+	height: 280px;
 }
 
-.google-maps {
-    position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
-    height: 350;
-    overflow: hidden;
+/*
+==================IMAGES NAVIGATION====================
+*/
+
+
+img.main {
+	max-width: 100%;
 }
 
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+img.ri {
+	max-width: 50%;
 }
 
 img.banner {
 	max-width: 100%;
 }
 
-.footer_bar {
-	text-align: center;
-	background-color: $main_color;
-	padding: 5px;
-	p {
-		color: $bkg_color;
-		font-size: 10px;
-	}
-}
-
-// MID SCREENs
+/*
+==================TABLET BASICS====================
+*/
 
 @media screen and (max-width: 968px) {
 	h1 {
@@ -132,21 +104,25 @@ img.banner {
 		font-size: 1em;
 	}
 	.nav li a {
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 	p {
 		font-size: 1em;
 	}
-	.sidebar p {
+	.italics {
 		font-size: 0.9em;
 	}
 	a {
-		font-size: 0.5em;
+		padding: 10px 20px;
+	}
+	.fixed_280 {
+		height: auto;
 	}
 }
 
-
-// MOBILE SCREENs
+/*
+==================MOBILE BASICS====================
+*/
 
 @media screen and (max-width: 640px) {
 	h1 {
@@ -160,21 +136,62 @@ img.banner {
 	}
 	.content {
 		height: auto;
-	}
-	.sidebar {
-		height: auto;
 		p {
 			font-size: 1em;
 		}
 	}
-	.location {
+	.italics {
+		font-size: 1em;
+	}
+	.content_secondary {
+		height: auto;
+	}
+	.content_tertiary {
+		height: auto;
+	}
+	.fixed_280 {
 		height: auto;
 	}
 }
 
 /*
-Navigation Menu
-======================================
+==================DESKTOP NAVIGATION====================
+*/
+
+.nav {
+	background-color: $main_color_dark;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	ul {
+		padding: 0px;
+		margin: 0px;		
+	}
+	li {
+		display: inline;
+		padding: 10px;
+		margin: 0px;
+		&:hover {
+			box-shadow: 0px -5px 0px 0px $main_color_accent inset;
+		}
+		&:active {
+			background-color: $main_color;
+		}
+	}
+	a {
+		font-size: 1em;
+		color: $bkg_color_lighter;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		margin: 0px;
+	}
+}
+
+/*
+==================HIDDEN NAVIGATION====================
 */
 
 .wrapper {
@@ -184,16 +201,16 @@ Navigation Menu
 }
 
 .menu-link {
-	color: $bkg_color;
+	color: $bkg_color_lighter;
 	position: absolute;
   	font-size: 1.5em;
   	padding: 0 0.5em;
-  	background-color: $main_color;
+  	background-color: $main_color_dark;
   	&:hover {
-		background-color: $main_color_dark;
+		background-color: $main_color_accent;
   	}
   	&:active {
-		background-color: $main_color_dark;
+		background-color: $main_color;
   }
 }
 
@@ -227,8 +244,7 @@ Navigation Menu
 }
 
 /*
-Nav Panel
-======================================
+==================HIDDEN NAVIGATION PANEL====================
 */
 
 .panel {
@@ -244,7 +260,7 @@ Nav Panel
 	  	margin: 0px;
 	  li {
 	  	padding: 1em;
-	  	box-shadow: 0px -1px 0px 0px $main_color_dark inset;
+	  	box-shadow: 0px -1px 0px 0px $main_color_accent inset;
 	  	&:hover {
 	  		background-color: $main_color_accent;
 	  	}

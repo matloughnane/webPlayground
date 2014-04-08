@@ -18,6 +18,16 @@
 
     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
 
+    <!-- TABLE SCRIPT -->
+      <script>
+        $(function() {
+          $.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
+            $('#CSVSource').html('<pre>' + data + '</pre>');
+          });
+          $('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
+        });
+      </script>
+
   </head>
 <body class="wrapper push">
     <div class="wrap wider">
@@ -70,15 +80,12 @@
     <div class="unit whole content">
       <h2>Tables</h2>
       <!-- CSV LINK: https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv -->
-
-      <div id="CSVSource" style="background-color: #FAFAFA; border: 1px solid #999999">
-      </div>
-
       <br><br>
       CSV To Table:<br>
       <div id="CSVTable">
-      </div>
 
+      </div>
+      <br><br>
   </div>
 </div> 
 
@@ -98,18 +105,6 @@
     <span style="float:left;"><a href="#">Thank Yous</a></span>
     <span style="float:right;">Arranmore Challenge v2.0</span>
 </div>
-
-<!-- UPDATE FIXTURES SCRIPT -->
-
-<script>
-$(function() {
-    $.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
-      $('#CSVSource').html('<pre>' + data + '</pre>');
-    });
-    $('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
-    });;
-  });
-</script>
 
 <!-- BIG SLIDE MENU -->
 <script>

@@ -12,10 +12,10 @@
 	
 	<script>
 	$(function() {
-		$.get('test.csv', function(data) {
+		$.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
-		$('#CSVTable').CSVToTable('test.csv', { loadingImage: 'images/loading.gif', startLine: 0 });
+		$('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
 	});
 	</script>
 </head>

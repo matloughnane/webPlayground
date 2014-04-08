@@ -30,6 +30,7 @@ p {
 }
 
 a {
+	color: $bkg_color_lighter;
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -91,6 +92,16 @@ a {
 	// background-color: $main_color;
 }
 
+.anchor_box {
+	a {
+		font-size: 1.2em;
+		line-height: 200%;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .insta_photo {
 	padding: 0px;
 }
@@ -144,6 +155,15 @@ img.banner {
 	.fixed_280 {
 		height: auto;
 	}
+	.anchor_box {
+		a {
+			font-size: 0.8em;
+			line-height: 150%;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 /*
@@ -180,6 +200,15 @@ img.banner {
 	}
 	.fixed_240 {
 		height: auto;
+	}
+	.anchor_box {
+		a {
+			font-size: 0.75em;
+			line-height: 150%;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 

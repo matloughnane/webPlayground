@@ -84,7 +84,7 @@
 			trClass: "",
 			tdClass: "",
 			loadingImage: "",
-			loadingText: "Loading CSV data...",
+			loadingText: "Grabbing Latest Results",
 			separator: ",",
 			startLine: 0
 		};	

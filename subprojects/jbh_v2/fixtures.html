@@ -14,18 +14,17 @@
     <script src="assets/js/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bigSlide.min.js"></script>
     <script src="assets/js/jquery.csvToTable.js"></script>
-    <script src="assets/js/jquery.tablesorter.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
 
     <!-- TABLE SCRIPT -->
       <script>
         $(function() {
-          $.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
-            $('#CSVSource').html('<pre>' + data + '</pre>');
+          $('#groups_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+          $('#quarters_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dDE1R1FLTVJTeE51b000SEk3d2xpWHc&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+          $('#semis_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dFl6NjJWbmhtWGFYUjEyN2V5VWZYQ1E&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
+          $('#finals_table').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dERBRjVmOXlwcnNuVzVjbHlBU3c0OFE&output=csv', { loadingImage: 'assets/img/loading.gif', startLine: 0 });
           });
-          $('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
-        });
       </script>
 
   </head>
@@ -67,35 +66,30 @@
 
 <div class="wrap">
   <div class="grid">
-    <div class="unit whole content">
-      <h2>Fixtures</h2>
+    <div class="unit one-fifth content_tertiary anchor_box">
+      <a href="#">Group Stages</a> <br>
+      <a href="#quarters">Quarter Finals</a> <br>
+      <a href="#semis">Semi Finals</a> <br>
+      <a href="#final">The Final</a> <br>
     </div>
-  </div>
-</div> 
-
-<div style="height:10px;width:100%;"></div>
-
-<div class="wrap">
-  <div class="grid">
-    <div class="unit whole content">
-      <h2>Tables</h2>
-      <!-- CSV LINK: https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv -->
-      <br><br>
-      CSV To Table:<br>
-      <div id="CSVTable">
-
+    <div class="unit four-fifths content">
+      <p>Here's all the ressults from the games:</p>
+      <p>NB: Post the fixtures after the live draw. Work out how to do the groups.</p>
+      <div id="groups_table">
       </div>
       <br><br>
-  </div>
-</div> 
-
-<div style="height:10px;width:100%;"></div>
-
-<div class="wrap">
-  <div class="grid">
-    <div class="unit whole no-gutters content_secondary">
-      BANNER
-    </div>
+      <a id="quarters"></a>
+      <div id="quarters_table">
+      </div>
+      <br><br>
+      <a id="semis"></a>
+      <div id="semis_table">
+      </div>
+      <br><br>
+      <a id="finals"></a>
+      <div id="finals_table">
+      </div>
+      <br><br>
   </div>
 </div> 
 

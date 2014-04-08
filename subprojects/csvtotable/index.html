@@ -12,7 +12,16 @@
 	
 	<script>
 	$(function() {
+		$.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
+			$('#CSVSource').html('<pre>' + data + '</pre>');
+		});
 		$('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
+		$.get('test.tsv', function(data) {
+			$('#TSVSource').html('<pre>' + data + '</pre>');
+		});
+		$('#TSVTable').CSVToTable('test.tsv', { loadingText: 'Loading TSV Data...', loadingImage: 'images/loading.gif', startLine: 0, separator: "\t" });
+		$('#CSVTable2').CSVToTable('test.csv', { loadingImage: 'images/loading.gif', startLine: 1, headers: ['Album Title', 'Artist Name', 'Price ($USD)'] }).bind("loadComplete",function() { 
+			$('#CSVTable2').find('TABLE').tablesorter();
 		});;
 	});
 	</script>
@@ -21,10 +30,13 @@
 
 This is a test of the CSVToTable plugin.
 <br><br>
+
 CSV To Table:<br>
 <div id="CSVTable">
+
 </div>
 
 <br><br>
+
 </body>
 </html>

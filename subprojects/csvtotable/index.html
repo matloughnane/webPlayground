@@ -16,13 +16,6 @@
 			$('#CSVSource').html('<pre>' + data + '</pre>');
 		});
 		$('#CSVTable').CSVToTable('test.csv', { loadingImage: 'images/loading.gif', startLine: 0 });
-		$.get('test.tsv', function(data) {
-			$('#TSVSource').html('<pre>' + data + '</pre>');
-		});
-		$('#TSVTable').CSVToTable('test.tsv', { loadingText: 'Loading TSV Data...', loadingImage: 'images/loading.gif', startLine: 0, separator: "\t" });
-		$('#CSVTable2').CSVToTable('test.csv', { loadingImage: 'images/loading.gif', startLine: 1, headers: ['Album Title', 'Artist Name', 'Price ($USD)'] }).bind("loadComplete",function() { 
-			$('#CSVTable2').find('TABLE').tablesorter();
-		});;
 	});
 	</script>
 </head>

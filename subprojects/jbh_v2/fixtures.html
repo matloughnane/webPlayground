@@ -1,0 +1,121 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arran Challenge 2014</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+<!--     <link rel="stylesheet" type="text/css" href="assets/css/#.css"> -->
+
+<!--      <script src="#"></script> -->
+<!--     // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bigSlide.min.js"></script>
+    <script src="assets/js/jquery.csvToTable.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+<body class="wrapper push">
+    <div class="wrap wider">
+      <div class="grid">
+        <a href="#menu" class="menu-link pull-left hide-until-mobiles">&#9776;</a>
+        <div class="unit whole align-center">
+        <h2> Arranmore Challenge <br> LOGO</h2>
+        </div>
+      </div>
+    </div>
+<!-- NAV MENUS -->
+<div class="wrap grid whole">
+    <nav id="menu" class="panel" role="navigation">
+          <ul>
+              <li><a class="nav_link" href="index.html">Home</a></li>
+              <li><a class="nav_link" href="about.html">About</a></li>
+              <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
+              <li><a class="nav_link" href="live.html">Live</a></li>
+              <li><a class="nav_link" href="photos.html">Photos</a></li>
+          </ul>
+    </nav>
+    <div class="full_bar">
+<!--       <div class="hide-until-mobiles align-center content_secondary">Arranmore Challenge</div> -->
+          <div class="nav hide-on-mobiles">
+            <ul>
+                <li><a class="nav_link" href="index.html">Home</a></li>
+                <li><a class="nav_link" href="about.html">About</a></li>
+                <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
+                <li><a class="nav_link" href="live.html">Live</a></li>
+                <li><a class="nav_link" href="photos.html">Photos</a></li>
+            </ul>
+          </div>
+      </div>
+</div>
+<!-- END NAV -->
+<div style="height:10px;width:100%;"></div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="unit whole content">
+      <h2>Fixtures</h2>
+    </div>
+  </div>
+</div> 
+
+<div style="height:10px;width:100%;"></div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="unit whole content">
+      <h2>Tables</h2>
+      <!-- CSV LINK: https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv -->
+
+      <div id="CSVSource" style="background-color: #FAFAFA; border: 1px solid #999999">
+      </div>
+
+      <br><br>
+      CSV To Table:<br>
+      <div id="CSVTable">
+      </div>
+
+  </div>
+</div> 
+
+<div style="height:10px;width:100%;"></div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="unit whole no-gutters content_secondary">
+      BANNER
+    </div>
+  </div>
+</div> 
+
+<div style="height:10px;width:100%;"></div>
+
+<div class="wrap grid whole footer_bar">
+    <span style="float:left;"><a href="#">Thank Yous</a></span>
+    <span style="float:right;">Arranmore Challenge v2.0</span>
+</div>
+
+<!-- UPDATE FIXTURES SCRIPT -->
+
+<script>
+$(function() {
+    $.get('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', function(data) {
+      $('#CSVSource').html('<pre>' + data + '</pre>');
+    });
+    $('#CSVTable').CSVToTable('https://docs.google.com/spreadsheet/pub?key=0Ahm69ZFnwz84dGExeTR4RUZpU2Z2YzMyVDBDUXBKZmc&output=csv', { loadingImage: 'images/loading.gif', startLine: 0 });
+    });;
+  });
+</script>
+
+<!-- BIG SLIDE MENU -->
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+
+  </body>
+</html>

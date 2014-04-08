@@ -34,78 +34,109 @@ h1 {
 }
 
 /* line 23, sass/partials/_base.scss */
+h4 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 0.5em;
+}
+
+/* line 28, sass/partials/_base.scss */
 p {
   font-size: 18px;
 }
 
-/* line 27, sass/partials/_base.scss */
+/* line 32, sass/partials/_base.scss */
 a {
   font-size: 14px;
   text-decoration: none;
 }
 
-/* line 32, sass/partials/_base.scss */
+/* line 37, sass/partials/_base.scss */
+.external {
+  line-height: 200%;
+}
+
+/* line 41, sass/partials/_base.scss */
 .italics {
   font-style: italic;
   font-size: 1em;
 }
 
-/* line 37, sass/partials/_base.scss */
+/* line 46, sass/partials/_base.scss */
 .bold_statement {
   letter-spacing: 2px;
   font-style: bold;
   text-transform: uppercase;
 }
 
-/* line 43, sass/partials/_base.scss */
+/* line 52, sass/partials/_base.scss */
 .footer_bar {
   text-align: center;
   background-color: #1e824c;
   padding: 10px;
 }
-/* line 47, sass/partials/_base.scss */
+/* line 56, sass/partials/_base.scss */
 .footer_bar span {
   color: #f2f1ef;
   font-size: 12px;
   padding: 5px;
 }
+/* line 61, sass/partials/_base.scss */
+.footer_bar a {
+  font-size: 12px;
+  color: #f2f1ef;
+}
 
-/* line 54, sass/partials/_base.scss */
+/* line 67, sass/partials/_base.scss */
 .content {
   background-color: #f2f1ef;
 }
 
-/* line 58, sass/partials/_base.scss */
+/* line 71, sass/partials/_base.scss */
 .content_secondary {
   color: #f2f1ef;
   background-color: #104428;
 }
 
-/* line 63, sass/partials/_base.scss */
+/* line 76, sass/partials/_base.scss */
 .content_tertiary {
   color: #f2f1ef;
   background-color: #26a65b;
 }
 
-/* line 68, sass/partials/_base.scss */
+/* line 81, sass/partials/_base.scss */
+.fixed_240 {
+  height: 240px;
+}
+
+/* line 85, sass/partials/_base.scss */
 .fixed_280 {
   height: 280px;
+}
+
+/* line 89, sass/partials/_base.scss */
+.arranmore_test {
+  text-align: center;
+}
+
+/* line 94, sass/partials/_base.scss */
+.insta_photo {
+  padding: 0px;
 }
 
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 77, sass/partials/_base.scss */
+/* line 103, sass/partials/_base.scss */
 img.main {
   max-width: 100%;
 }
 
-/* line 81, sass/partials/_base.scss */
+/* line 107, sass/partials/_base.scss */
 img.ri {
   max-width: 50%;
 }
 
-/* line 85, sass/partials/_base.scss */
+/* line 111, sass/partials/_base.scss */
 img.banner {
   max-width: 100%;
 }
@@ -114,7 +145,7 @@ img.banner {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 94, sass/partials/_base.scss */
+  /* line 120, sass/partials/_base.scss */
   h1 {
     color: #dadfe1;
     font-size: 2em;
@@ -122,37 +153,37 @@ img.banner {
     margin: 0px;
   }
 
-  /* line 100, sass/partials/_base.scss */
+  /* line 126, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 103, sass/partials/_base.scss */
+  /* line 129, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 106, sass/partials/_base.scss */
+  /* line 132, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 109, sass/partials/_base.scss */
+  /* line 135, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 112, sass/partials/_base.scss */
+  /* line 138, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 115, sass/partials/_base.scss */
+  /* line 141, sass/partials/_base.scss */
   a {
     padding: 10px 20px;
   }
 
-  /* line 118, sass/partials/_base.scss */
+  /* line 144, sass/partials/_base.scss */
   .fixed_280 {
     height: auto;
   }
@@ -161,7 +192,7 @@ img.banner {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 128, sass/partials/_base.scss */
+  /* line 154, sass/partials/_base.scss */
   h1 {
     color: #dadfe1;
     font-size: 2em;
@@ -169,44 +200,49 @@ img.banner {
     margin: 0px;
   }
 
-  /* line 134, sass/partials/_base.scss */
+  /* line 160, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 137, sass/partials/_base.scss */
+  /* line 163, sass/partials/_base.scss */
   .content {
     height: auto;
   }
-  /* line 139, sass/partials/_base.scss */
+  /* line 165, sass/partials/_base.scss */
   .content p {
     font-size: 1em;
   }
 
-  /* line 143, sass/partials/_base.scss */
+  /* line 169, sass/partials/_base.scss */
   .italics {
     font-size: 1em;
   }
 
-  /* line 146, sass/partials/_base.scss */
+  /* line 172, sass/partials/_base.scss */
   .content_secondary {
     height: auto;
   }
 
-  /* line 149, sass/partials/_base.scss */
+  /* line 175, sass/partials/_base.scss */
   .content_tertiary {
     height: auto;
   }
 
-  /* line 152, sass/partials/_base.scss */
+  /* line 178, sass/partials/_base.scss */
   .fixed_280 {
+    height: auto;
+  }
+
+  /* line 181, sass/partials/_base.scss */
+  .fixed_240 {
     height: auto;
   }
 }
 /*
 ==================DESKTOP NAVIGATION====================
 */
-/* line 161, sass/partials/_base.scss */
+/* line 190, sass/partials/_base.scss */
 .nav {
   background-color: #104428;
   list-style: none;
@@ -214,26 +250,26 @@ img.banner {
   padding: 0px;
   text-align: center;
 }
-/* line 167, sass/partials/_base.scss */
+/* line 196, sass/partials/_base.scss */
 .nav ul {
   padding: 0px;
   margin: 0px;
 }
-/* line 171, sass/partials/_base.scss */
+/* line 200, sass/partials/_base.scss */
 .nav li {
   display: inline;
   padding: 10px;
   margin: 0px;
 }
-/* line 175, sass/partials/_base.scss */
+/* line 204, sass/partials/_base.scss */
 .nav li:hover {
   box-shadow: 0px -5px 0px 0px #26a65b inset;
 }
-/* line 178, sass/partials/_base.scss */
+/* line 207, sass/partials/_base.scss */
 .nav li:active {
   background-color: #1e824c;
 }
-/* line 182, sass/partials/_base.scss */
+/* line 211, sass/partials/_base.scss */
 .nav a {
   font-size: 1em;
   color: #f2f1ef;
@@ -247,14 +283,14 @@ img.banner {
 /*
 ==================HIDDEN NAVIGATION====================
 */
-/* line 197, sass/partials/_base.scss */
+/* line 226, sass/partials/_base.scss */
 .wrapper {
   position: relative;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* line 203, sass/partials/_base.scss */
+/* line 232, sass/partials/_base.scss */
 .menu-link {
   color: #f2f1ef;
   position: absolute;
@@ -262,47 +298,47 @@ img.banner {
   padding: 0 0.5em;
   background-color: #104428;
 }
-/* line 209, sass/partials/_base.scss */
+/* line 238, sass/partials/_base.scss */
 .menu-link:hover {
   background-color: #26a65b;
 }
-/* line 212, sass/partials/_base.scss */
+/* line 241, sass/partials/_base.scss */
 .menu-link:active {
   background-color: #1e824c;
 }
 
-/* line 217, sass/partials/_base.scss */
+/* line 246, sass/partials/_base.scss */
 .subtitle {
   text-align: center;
   font-size: 1.125em;
   margin: .5em 0;
 }
 
-/* line 223, sass/partials/_base.scss */
+/* line 252, sass/partials/_base.scss */
 .btn-list {
   margin: 3em 0;
   text-align: center;
 }
-/* line 226, sass/partials/_base.scss */
+/* line 255, sass/partials/_base.scss */
 .btn-list li {
   display: inline-block;
 }
-/* line 228, sass/partials/_base.scss */
+/* line 257, sass/partials/_base.scss */
 .btn-list li:first-of-type {
   margin-right: 1em;
 }
 
-/* line 234, sass/partials/_base.scss */
+/* line 263, sass/partials/_base.scss */
 .btn {
   padding: 1em .5em;
   text-align: center;
   border-radius: 6px;
 }
-/* line 238, sass/partials/_base.scss */
+/* line 267, sass/partials/_base.scss */
 .btn:hover {
   background: #16a085;
 }
-/* line 241, sass/partials/_base.scss */
+/* line 270, sass/partials/_base.scss */
 .btn:active {
   background: #16a085;
 }
@@ -310,7 +346,7 @@ img.banner {
 /*
 ==================HIDDEN NAVIGATION PANEL====================
 */
-/* line 250, sass/partials/_base.scss */
+/* line 279, sass/partials/_base.scss */
 .panel {
   text-transform: uppercase;
   background: #1e824c;
@@ -321,36 +357,36 @@ img.banner {
   width: 15.625em;
   /*should match the above value*/
 }
-/* line 257, sass/partials/_base.scss */
+/* line 286, sass/partials/_base.scss */
 .panel ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-/* line 261, sass/partials/_base.scss */
+/* line 290, sass/partials/_base.scss */
 .panel ul li {
   padding: 1em;
   box-shadow: 0px -1px 0px 0px #26a65b inset;
 }
-/* line 264, sass/partials/_base.scss */
+/* line 293, sass/partials/_base.scss */
 .panel ul li:hover {
   background-color: #26a65b;
 }
-/* line 267, sass/partials/_base.scss */
+/* line 296, sass/partials/_base.scss */
 .panel ul li:active {
   box-shadow: 0px -5px 0px 0px #104428 inset;
 }
-/* line 271, sass/partials/_base.scss */
+/* line 300, sass/partials/_base.scss */
 .panel ul a {
   color: #dadfe1;
   padding: 1em;
 }
-/* line 274, sass/partials/_base.scss */
+/* line 303, sass/partials/_base.scss */
 .panel ul a.nav_link {
   font-size: 1em;
 }
 
-/* line 281, sass/partials/_base.scss */
+/* line 310, sass/partials/_base.scss */
 .nav-icon {
   margin-right: 6px;
 }
@@ -489,4 +525,65 @@ img.banner {
 .bottom {
   position: absolute;
   bottom: 0px;
+}
+
+/* Normal styles for the modal */
+/* line 4, sass/partials/_modal.scss */
+#modal {
+  background: #fff;
+  left: 50%;
+  margin: -250px 0 0 -40%;
+  position: absolute;
+  top: -50%;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Make the modal appear when targeted */
+/* line 20, sass/partials/_modal.scss */
+#modal:target {
+  top: 50%;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+/* line 26, sass/partials/_modal.scss */
+#modal header, #modal footer {
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+
+/* line 33, sass/partials/_modal.scss */
+#modal footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+
+/* line 40, sass/partials/_modal.scss */
+#modal section, #modal header, #modal footer {
+  padding: 15px;
+  z-index: 200;
+}
+
+/* line 44, sass/partials/_modal.scss */
+#modal h2 {
+  margin: 0;
+}
+
+/* line 47, sass/partials/_modal.scss */
+#modal .btn {
+  float: right;
 }

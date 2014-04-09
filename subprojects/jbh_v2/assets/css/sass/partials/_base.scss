@@ -32,9 +32,6 @@ p {
 a {	
 	color: $main_color_dark;
 	text-decoration: none;
-	&:hover {
-		box-shadow: 0px -3px 0px 0px $main_color_accent inset;
-	}
 }
 
 .external {
@@ -112,6 +109,9 @@ a {
 ==================IMAGES NAVIGATION====================
 */
 
+img.logo {
+	max-width: 20%;
+}
 
 img.main {
 	max-width: 100%;
@@ -212,6 +212,9 @@ img.banner {
 			}
 		}
 	}
+	img.logo {
+		max-width: 40%;
+	}
 }
 
 /*
@@ -257,7 +260,6 @@ img.banner {
 .wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .menu-link {
@@ -324,9 +326,6 @@ img.banner {
 	  	&:hover {
 	  		background-color: $main_color_accent;
 	  	}
-	  	&:active {
-	  		box-shadow: 0px -5px 0px 0px $main_color_dark inset
-	  			}
 	  }
 	  a {
 	  	color: $bkg_color;

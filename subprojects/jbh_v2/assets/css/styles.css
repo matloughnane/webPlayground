@@ -23,103 +23,103 @@ body {
   font-family: 'Rambla',sans-serif;
   background-color: #dadfe1;
   margin: 0px;
-  text-align: 10px;
 }
 
-/* line 17, sass/partials/_base.scss */
+/* line 16, sass/partials/_base.scss */
 h1 {
   color: #2c3e50;
   font-size: 3em;
   padding: 10px;
 }
 
-/* line 23, sass/partials/_base.scss */
+/* line 22, sass/partials/_base.scss */
 h4 {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 0.5em;
 }
 
-/* line 28, sass/partials/_base.scss */
+/* line 27, sass/partials/_base.scss */
 p {
   font-size: 18px;
 }
 
-/* line 32, sass/partials/_base.scss */
+/* line 31, sass/partials/_base.scss */
 a {
   color: #104428;
   text-decoration: none;
 }
 
-/* line 37, sass/partials/_base.scss */
+/* line 36, sass/partials/_base.scss */
 .external {
   line-height: 200%;
 }
 
-/* line 41, sass/partials/_base.scss */
+/* line 40, sass/partials/_base.scss */
 .italics {
   font-style: italic;
   font-size: 1em;
 }
 
-/* line 46, sass/partials/_base.scss */
+/* line 45, sass/partials/_base.scss */
 .bold_statement {
   letter-spacing: 2px;
   font-style: bold;
   text-transform: uppercase;
 }
 
-/* line 52, sass/partials/_base.scss */
+/* line 51, sass/partials/_base.scss */
 .footer_bar {
   text-align: center;
   background-color: #1e824c;
   padding: 10px;
 }
-/* line 56, sass/partials/_base.scss */
+/* line 55, sass/partials/_base.scss */
 .footer_bar span {
   color: #f2f1ef;
   font-size: 12px;
   padding: 5px;
 }
-/* line 61, sass/partials/_base.scss */
+/* line 60, sass/partials/_base.scss */
 .footer_bar a {
   font-size: 12px;
   color: #f2f1ef;
 }
 
-/* line 67, sass/partials/_base.scss */
+/* line 66, sass/partials/_base.scss */
 .content {
   background-color: #f2f1ef;
 }
 
-/* line 71, sass/partials/_base.scss */
+/* line 70, sass/partials/_base.scss */
 .content_secondary {
   color: #f2f1ef;
   background-color: #104428;
 }
 
-/* line 76, sass/partials/_base.scss */
+/* line 75, sass/partials/_base.scss */
 .content_tertiary {
   color: #f2f1ef;
-  background-color: #26a65b;
+  background-color: #1e824c;
 }
 
-/* line 81, sass/partials/_base.scss */
+/* line 80, sass/partials/_base.scss */
 .fixed_240 {
   height: 240px;
 }
 
-/* line 85, sass/partials/_base.scss */
+/* line 84, sass/partials/_base.scss */
 .fixed_280 {
   height: 280px;
 }
 
-/* line 89, sass/partials/_base.scss */
+/* line 88, sass/partials/_base.scss */
 .arranmore_test {
   text-align: center;
 }
 
-/* line 95, sass/partials/_base.scss */
+/* line 94, sass/partials/_base.scss */
 .anchor_box a {
+  color: #f2f1ef;
   font-size: 1.2em;
   line-height: 200%;
 }
@@ -205,7 +205,7 @@ img.banner {
 
   /* line 161, sass/partials/_base.scss */
   .anchor_box a {
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 150%;
   }
   /* line 164, sass/partials/_base.scss */
@@ -266,7 +266,7 @@ img.banner {
 
   /* line 207, sass/partials/_base.scss */
   .anchor_box a {
-    font-size: 0.75em;
+    font-size: 1em;
     line-height: 150%;
   }
   /* line 210, sass/partials/_base.scss */
@@ -467,7 +467,7 @@ img.banner {
 /* line 34, sass/partials/_buttons.scss */
 .dark_highlight {
   color: #dadfe1;
-  background-color: #1e824c;
+  background-color: #26a65b;
 }
 /* line 37, sass/partials/_buttons.scss */
 .dark_highlight a {
@@ -477,7 +477,7 @@ img.banner {
 .dark_highlight:hover {
   box-shadow: 0px -3px 0px 0px #104428 inset;
   outline: 0 6px #104428;
-  background-color: #1e824c;
+  background-color: #26a65b;
 }
 /* line 45, sass/partials/_buttons.scss */
 .dark_highlight:active {

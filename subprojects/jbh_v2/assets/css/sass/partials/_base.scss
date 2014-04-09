@@ -28,6 +28,10 @@ p {
 	font-size: 18px;
 }
 
+p.smaller {
+	font-size: 15px;
+}
+
 a {	
 	color: $main_color_dark;
 	text-decoration: none;
@@ -40,6 +44,12 @@ a {
 .italics {
 	font-style: italic;
 	font-size: 1em;
+	clear: both;
+	display: block;
+	-webkit-margin-before: 0.75em;
+	-webkit-margin-after: 0.25em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 
 .bold_statement {
@@ -166,6 +176,11 @@ img.banner {
 			}
 		}
 	}
+	.wrapper {
+  		position: relative;
+  		margin: 0 auto;
+  		padding: 10px;
+	}
 }
 
 /*
@@ -214,6 +229,11 @@ img.banner {
 	}
 	img.logo {
 		max-width: 40%;
+	}
+	.wrapper {
+  		position: relative;
+  		margin: 0 auto;
+  		padding: 10px;
 	}
 }
 

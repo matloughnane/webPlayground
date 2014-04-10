@@ -25,12 +25,12 @@
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
 .grid .unit:first-child {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
  }
 .grid .unit:last-child {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Nested grids already have padding though, so let’s nuke it */

@@ -41,29 +41,29 @@
       </div>
     </div>
 <!-- NAV MENUS -->
-<div class="wrap grid whole">
+  <div class="wrap grid whole">
     <nav id="menu" class="panel" role="navigation">
-          <ul>
-              <li><a class="nav_link" href="index.html">Home</a></li>
-              <li><a class="nav_link" href="about.html">About</a></li>
-              <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
-              <li><a class="nav_link" href="live.html">Live</a></li>
-              <li><a class="nav_link" href="photos.html">Photos</a></li>
-          </ul>
+      <ul>
+          <li><a class="nav_link" href="index.html">Home</a></li>
+          <li><a class="nav_link" href="about.html">About</a></li>
+          <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
+          <li><a class="nav_link" href="live.html">Live</a></li>
+          <li><a class="nav_link" href="photos.html">Photos</a></li>
+      </ul>
     </nav>
     <div class="full_bar">
 <!--       <div class="hide-until-mobiles align-center content_secondary">Arranmore Challenge</div> -->
-          <div class="nav hide-on-mobiles">
-            <ul>
-                <li><a class="nav_link" href="index.html">Home</a></li>
-                <li><a class="nav_link" href="about.html">About</a></li>
-                <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
-                <li><a class="nav_link" href="live.html">Live</a></li>
-                <li><a class="nav_link" href="photos.html">Photos</a></li>
-            </ul>
-          </div>
+      <div class="nav hide-on-mobiles">
+        <ul>
+            <li><a class="nav_link" href="index.html">Home</a></li>
+            <li><a class="nav_link" href="about.html">About</a></li>
+            <li><a class="nav_link" href="fixtures.html">Fixtures</a></li>
+            <li><a class="nav_link" href="live.html">Live</a></li>
+            <li><a class="nav_link" href="photos.html">Photos</a></li>
+        </ul>
       </div>
-</div>
+    </div>
+  </div>
 <!-- END NAV -->
 
 <div style="height:5px;width:100%;"></div>
@@ -71,7 +71,8 @@
 <div class="wrap">
   <div class="grid">
     <div class="unit whole">
-      <div class="fb-share-button" style="float:right;" data-href="http://arranmorechallenge.com/live.html" data-type="button"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" style="float:right;" data-text="Check out latest tweets from Arranmore Challenge 2014" data-related="ArranChallenge" data-count="none" data-hashtags="jbh14">Tweet</a>
+      <div class="fb-share-button" style="float:right;" data-href="http://matloughnane.github.io/webPlayground/subprojects/jbh_v2/live.html" data-type="button"></div>
     </div>
   </div>
 </div> 
@@ -102,6 +103,16 @@
     <span style="float:right;">Arranmore Challenge v2.0</span>
 </div>
 
+<!-- BIG SLIDE MENU -->
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+
+<!-- SOCIAL SCRIPTS -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -110,13 +121,6 @@
   js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=789058404457259";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- BIG SLIDE MENU -->
-<script>
-    $(document).ready(function() {
-        $('.menu-link').bigSlide();
-    });
-</script>
 
   </body>
 </html>

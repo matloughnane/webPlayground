@@ -19,9 +19,6 @@ $(document).ready(function(){
 // CLIENT ID
 // b654ce8fe6834775a9f68f653e0c707b
 
-// CLIENT SECRET:
-// 6503c043c5b24c799d25263019f8bbf1
-
 // REDIRECT URI:
 // http://matloughnane.github.io/webPlayground/subprojects/instagram_trial/instagram.html
 

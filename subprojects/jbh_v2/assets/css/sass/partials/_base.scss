@@ -39,6 +39,9 @@ a {
 
 .external {
 		line-height: 200%;
+		&:hover {
+			color: $main_color_accent;
+		}
 }
 
 .italics {

@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+
+<html lang="en">
+	<head>
+		<title>Video Background</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />  
+		<link rel="stylesheet" type="text/css" href="assets/css/bigvideo.css" />
+	</head>
+<body>
+<!-- 	<video id="video_background" preload="auto" autoplay="true" muted volume="0" controls loop>
+			<source src="assets/videos/katie_owen.webm" type="video/webm"/>
+			<source src="assets/videos/katie_owen.ogv" type="video/ogg ogv"; codecs="theora, vorbis"/>
+			<source src="assets/videos/katie_owen.mp4" type="video/mp4"/>			
+	</video> -->
+
+<div class="heading">Katie and Owen</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/video.js"></script>  
+<script src="assets/js/bigvideo.js"></script>  
+
+<script>
+    $(function() {
+        var BV = new $.BigVideo();
+		BV.init();
+		BV.show('assets/videos/katie_owen.webm', {altSource:'assets/videos/katie_owen.ogv', ambient:true});
+    });
+</script>
+
+</body>
+</html>

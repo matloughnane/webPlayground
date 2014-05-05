@@ -1,0 +1,97 @@
+<!doctype html5>
+<html class="no-js" lang="en">
+<head>
+  <title>Parallax Scrolling Tutorial</title>
+  <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+<!--   <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/customstyles.css">
+  <link rel="stylesheet" href="assets/css/video_styles.css">
+</head>
+
+<body>
+
+<!-- <div class="top_bar">
+	<div class="title">
+		<span>mat loughnane</span>
+	</div>
+</div> -->
+
+  <div id="main" role="main">
+
+	<!-- Section #1 / Intro -->
+	<section id="first" class="story" data-speed="8" data-type="background">    	
+		<div class="matlogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>	
+		<video id="video_background" preload="auto" autoplay="true" muted volume="0" controls loop>
+			<source src="assets/videos/katie_owen.webm" type="video/webm"/>
+			<source src="assets/videos/katie_owen.ogv" type="video/ogg ogv"; codecs="theora, vorbis"/>
+			<source src="assets/videos/katie_owen.mp4" type="video/mp4"/>			
+		</video>
+		<div id="video_pattern" ></div>
+		<div class="heading">Katie and Owen</div>
+	</section>
+
+	<!-- Section #2 / Background Only -->
+	<section id="second" class="story" data-speed="4" data-type="background">
+<!-- 		<video id="video_background" preload="auto" autoplay="true" muted volume="0" controls loop>
+			<source src="assets/videos/katie_owen.webm" type="video/webm"/>
+			<source src="assets/videos/katie_owen.ogv" type="video/ogg ogv"; codecs="theora, vorbis"/>
+			<source src="assets/videos/katie_owen.mp4" type="video/mp4"/>			
+		</video>
+		<div id="video_pattern" ></div> -->
+		<article>
+			<h2>background only</h2>
+				<p>The background and the box move at the same speed as the scroll of the screen upwards.</p>
+				<p>There's no reverse movement, no sprites all CSS.</p>		
+		</article>
+	</section>
+	
+	<!-- Section #3 / Photos -->
+	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+    	<article>
+    		<h2>the picture moves <br>too</h2>
+	    	<div class="textbox">    	
+	    	<p>Oooh fancy!</p>
+		    </div>
+    	</article>
+	</section>	
+	
+
+	<!-- Section #4 / HTML5 Video -->
+	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+    	<article>
+    		<h2>HTML5 Video</h2>
+	    	<div class="textbox">    	
+		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		    	<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. o.</p>
+		    </div>
+    	</article>
+<!-- 		<video controls width="640" width="480" data-type="video" data-offsetY="2400" data-speed="1.5">
+			<source src="video/parallelparking.theora.ogv" type="video/ogg" />
+			<source src="video/parallelparking.mp4" type="video/mp4" />
+			<source src="video/parallelparking.webm" type="video/webm" />
+		</video> -->
+	</section>	
+
+	<!-- Section #5 / The End-->
+	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
+	</section>
+	
+  </div> <!-- // End of #main -->
+
+
+
+  <!-- Our Javascript, starting with jQuery -->
+  <script src='assets/js/libs/jquery-1.6.1.min.js'></script>
+  <script src="assets/js/script.js"></script>
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");
+  <![endif]-->
+
+</body>
+</html>

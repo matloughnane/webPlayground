@@ -27,134 +27,93 @@ body {
 }
 
 /* line 17, sass/partials/_base.scss */
-h1 {
-  color: #ecf0f1;
-  font-size: 3em;
-  padding: 10px;
-}
-
-/* line 23, sass/partials/_base.scss */
 p {
   font-size: 18px;
 }
 
-/* line 27, sass/partials/_base.scss */
+/* line 21, sass/partials/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 35, sass/partials/_base.scss */
-.full_bar {
-  width: 100%;
-  background-color: #c0392b;
+/* line 25, sass/partials/_base.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 40, sass/partials/_base.scss */
-.nav {
+/* line 30, sass/partials/_base.scss */
+li {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-}
-/* line 45, sass/partials/_base.scss */
-.nav ul {
-  padding: 0px;
-  margin: 0px;
-}
-/* line 49, sass/partials/_base.scss */
-.nav li {
-  display: inline;
-  padding: 10px;
-  margin: 0px;
-}
-/* line 53, sass/partials/_base.scss */
-.nav li:hover {
-  box-shadow: 0px -5px 0px 0px #852f2f inset;
-}
-/* line 56, sass/partials/_base.scss */
-.nav li:active {
-  background-color: #852f2f;
-}
-/* line 60, sass/partials/_base.scss */
-.nav a {
-  color: #ecf0f1;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 50px;
-  margin: 0px;
 }
 
-/* line 72, sass/partials/_base.scss */
-img.ri {
-  max-width: 30%;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 80, sass/partials/_base.scss */
-  h1 {
-    color: #ecf0f1;
-    font-size: 2em;
-    padding: 0px;
-    margin: 0px;
-  }
-}
-/*
-Masthead
-======================================
-*/
-/* line 96, sass/partials/_base.scss */
+/* line 34, sass/partials/_base.scss */
 .wrapper {
   position: relative;
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* line 103, sass/partials/_base.scss */
+/* line 42, sass/partials/_base.scss */
 .menu-link {
   position: absolute;
   font-size: 1.5em;
 }
 
-/* line 118, sass/partials/_base.scss */
+/* line 48, sass/partials/_base.scss */
+.menu-link:link,
+.menu-link:visited {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: .2em .4em;
+}
+
+/* line 56, sass/partials/_base.scss */
+.menu-link:hover,
+.menu-link:active {
+  color: #25B89A;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 64, sass/partials/_base.scss */
 .subtitle {
   text-align: center;
   font-size: 1.125em;
   margin: .5em 0;
 }
 
-/* line 124, sass/partials/_base.scss */
+/* line 70, sass/partials/_base.scss */
 .btn-list {
   margin: 3em 0;
   text-align: center;
 }
 
-/* line 129, sass/partials/_base.scss */
+/* line 75, sass/partials/_base.scss */
 .btn-list li {
   display: inline-block;
 }
 
-/* line 133, sass/partials/_base.scss */
+/* line 79, sass/partials/_base.scss */
 .btn-list li:first-of-type {
   margin-right: 1em;
 }
 
-/* line 137, sass/partials/_base.scss */
+/* line 83, sass/partials/_base.scss */
 .btn {
   padding: 1em .5em;
   text-align: center;
   border-radius: 6px;
 }
 
-/* line 144, sass/partials/_base.scss */
+/* line 90, sass/partials/_base.scss */
 .btn:link,
 .btn:visited {
   background: #25B89A;
   color: #fff;
 }
 
-/* line 150, sass/partials/_base.scss */
+/* line 96, sass/partials/_base.scss */
 .btn:hover,
 .btn:active {
   background: #16a085;
@@ -164,9 +123,9 @@ Masthead
 Nav Panel
 ======================================
 */
-/* line 159, sass/partials/_base.scss */
+/* line 106, sass/partials/_base.scss */
 .panel {
-  background: #c0392b;
+  background: #2C3E50;
   z-index: 9999;
   position: fixed;
   left: -15.625em;
@@ -175,26 +134,31 @@ Nav Panel
   /*should match the above value*/
 }
 
-/* line 172, sass/partials/_base.scss */
+/* line 114, sass/partials/_base.scss */
+.panel ul {
+  border-top: 2px solid #34495D;
+}
+
+/* line 118, sass/partials/_base.scss */
 .panel a {
   display: block;
   border-bottom: 2px solid #34495D;
   padding: 1em;
 }
 
-/* line 179, sass/partials/_base.scss */
+/* line 125, sass/partials/_base.scss */
 .panel a:link,
 .panel a:visited {
   color: #fff;
 }
 
-/* line 184, sass/partials/_base.scss */
+/* line 130, sass/partials/_base.scss */
 .panel a:hover,
 .panel a:active {
   background: #25B89A;
 }
 
-/* line 188, sass/partials/_base.scss */
+/* line 134, sass/partials/_base.scss */
 .nav-icon {
   margin-right: 6px;
 }

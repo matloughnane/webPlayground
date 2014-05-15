@@ -1,0 +1,227 @@
+.btn {
+	border: none;
+	background: none;
+	padding: 10px 20px;
+	display: inline-block;
+	margin: 8px 5px;
+	text-transform: lowercase;
+	text-decoration: none;
+	outline: none;
+	position: relative;
+	border-radius: 0px;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+}
+
+.default {
+	color: $bkg_color_lighter;
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -4px 0px 0px $main_color_accent inset;
+		outline: 0 6px $main_color_dark;
+		-webkit-transition: translateY(-100%) rotateX(90deg);
+		-moz-transition: translateY(-100%) rotateX(90deg);
+		transition: translateY(-100%) rotateX(90deg);
+		// background-color: $main_color;
+	}
+	&:active {
+		background-color: $main_color_dark;
+		top: 0px;
+	}
+}
+
+.dark_highlight {
+	color: $bkg_color_lighter;
+	background-color: $main_color_accent;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $main_color_dark inset;
+		outline: 0 6px $main_color_dark;
+		transition: $transition;
+	}
+	&:active {
+		background-color: $main_color_dark;
+		top: 0px;
+	}
+}
+
+// CIRCULAR BUTTONS
+
+.circle_btn_main {
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 15px 15px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: $bkg_color_lighter;
+	background: rgba(34, 167, 240, 0.6); //main colour accent
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+	i 	{
+		margin-top:20px;
+		font-size:50px;
+	}
+	&:after {
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		content: '';
+		-webkit-box-sizing: content-box; 
+		-moz-box-sizing: content-box; 
+		box-sizing: content-box;
+		top: -$outer_ring;
+		left: -$outer_ring;
+		padding: $outer_ring;
+		box-shadow: 0 0 0 4px $main_color;
+		-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+		-webkit-transform: scale(.8);
+		-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transition: transform 0.2s, opacity 0.2s;
+		transform: scale(.8);
+		opacity: 0;
+	}
+	&:hover {
+		background: $main_color;
+		color: $bkg_color_lighter;
+		&:after {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+.fa-spin2 {
+  -webkit-animation: spin 15s infinite linear;
+  -moz-animation: spin 15s infinite linear;
+  -o-animation: spin 15s infinite linear;
+  animation: spin 15s infinite linear;
+}
+
+
+// ALTERNATIVE CIRCLE BUTTONS
+
+.circle_btn_alt {
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 15px 15px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: $bkg_color_lighter;
+	background: rgba(235, 151, 78, 0.6); //main colour accent
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+	i 	{
+		margin-top:20px;
+		font-size:50px;
+	}
+	&:after {
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		content: '';
+		-webkit-box-sizing: content-box; 
+		-moz-box-sizing: content-box; 
+		box-sizing: content-box;
+		top: -$outer_ring;
+		left: -$outer_ring;
+		padding: $outer_ring;
+		box-shadow: 0 0 0 4px $main_color_opp;
+		-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+		-webkit-transform: scale(.8);
+		-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transition: transform 0.2s, opacity 0.2s;
+		transform: scale(.8);
+		opacity: 0;
+	}
+	&:hover {
+		background: $main_color_opp;
+		color: $bkg_color_lighter;
+		&:after {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+// SOCIAL BUTTONS
+
+.facebook {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $facebook_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $facebook;
+	}
+	&:active {
+		background-color: $facebook;
+		top: 0px;
+	}
+}
+
+.twitter {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $twitter_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $twitter;
+	}
+	&:active {
+		background-color: $twitter;
+		top: 0px;
+	}
+}
+
+.google {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $google_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $google;
+	}
+	&:active {
+		background-color: $google;
+		top: 0px;
+	}
+}
+

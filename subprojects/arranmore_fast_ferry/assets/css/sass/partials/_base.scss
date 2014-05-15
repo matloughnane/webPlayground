@@ -1,0 +1,44 @@
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+// BASIC FORMATTING
+body {
+	font-family: 'Rambla',sans-serif;
+	background-color: $bkg_color_lighter;
+	margin: 0px;
+}
+
+
+/*
+==================HEADER====================
+*/
+
+/*
+==================IMAGES NAVIGATION====================
+*/
+
+img {
+	max-width: 100%;
+}
+
+
+/*
+==================TABLET BASICS====================
+*/
+
+@media screen and (max-width: 968px) {
+
+}
+
+/*
+==================MOBILE BASICS====================
+*/
+
+@media screen and (max-width: 640px) {
+	
+}

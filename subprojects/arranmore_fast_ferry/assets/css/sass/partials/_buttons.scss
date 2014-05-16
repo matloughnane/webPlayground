@@ -155,9 +155,9 @@
 		-webkit-box-sizing: content-box; 
 		-moz-box-sizing: content-box; 
 		box-sizing: content-box;
-		top: -$outer_ring;
-		left: -$outer_ring;
-		padding: $outer_ring;
+		top: -$outer_ring_alt;
+		left: -$outer_ring_alt;
+		padding: $outer_ring_alt;
 		box-shadow: 0 0 0 4px $main_color_opp;
 		-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 		-webkit-transform: scale(.8);

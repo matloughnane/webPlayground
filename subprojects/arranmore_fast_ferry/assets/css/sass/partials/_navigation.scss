@@ -115,8 +115,11 @@
 	  	color: $bkg_color;
 	  	padding: 1em;
 	  	&.nav_link {
-	  		font-size: 1em;
-	  	}
+		  		font-size: 1.2em;
+		  	}
+		i {
+			margin-right: 10px;
+			}
 	  	}
 	}
 }

@@ -14,7 +14,8 @@ $bkg_dark: #BDC3C7;
 // ============ Theme Color - updated - blue =========
 
 $main_color: #3498DB;
-// rgba(52, 152, 219, 1)
+
+$main_color_halftransparent: rgba(52, 152, 219, 0.7);
 
 $main_color_accent: #22A7F0;
 // 34, 167, 240
@@ -27,6 +28,8 @@ $main_color_light: #6BB9F0;
 
 // Accents - updated - orange
 $main_color_opp: #F27935;
+
+$main_color_opp_halftransparent: rgba(242, 121, 53, 0.7);
 // 242, 121, 53
 
 $main_color_accent_opp: #EB974E;

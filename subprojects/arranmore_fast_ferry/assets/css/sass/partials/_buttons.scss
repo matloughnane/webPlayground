@@ -65,7 +65,7 @@
 	position: relative;
 	z-index: 1;
 	color: $bkg_color_lighter;
-	background: rgba(34, 167, 240, 0.6); //main colour accent
+	background: $main_color_halftransparent; //main colour accent
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
@@ -109,6 +109,12 @@
 	}
 }
 
+.text_below {
+	color: $main_color_halftransparent;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
 .fa-spin2 {
   -webkit-animation: spin 15s infinite linear;
   -moz-animation: spin 15s infinite linear;
@@ -123,9 +129,9 @@
 	display: inline-block;
 	font-size: 20px;
 	cursor: pointer;
-	margin: 15px 15px;
-	width: 90px;
-	height: 90px;
+	margin: 10px 10px;
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
 	text-align: center;
 	position: relative;
@@ -136,8 +142,8 @@
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
 	i 	{
-		margin-top:20px;
-		font-size:50px;
+		margin-top:15px;
+		font-size:40px;
 	}
 	&:after {
 		pointer-events: none;
@@ -174,6 +180,13 @@
 		}
 	}
 }
+
+.text_below_alt {
+	color: $main_color_opp_halftransparent;
+	font-size: 16px;
+	margin-top: 25px;
+}
+
 
 // SOCIAL BUTTONS
 

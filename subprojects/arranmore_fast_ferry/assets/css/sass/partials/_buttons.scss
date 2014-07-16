@@ -51,6 +51,57 @@
 	}
 }
 
+// SOCIAL BUTTONS
+
+.facebook {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $facebook_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $facebook;
+	}
+	&:active {
+		background-color: $facebook;
+		top: 0px;
+	}
+}
+
+.twitter {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $twitter_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $twitter;
+	}
+	&:active {
+		background-color: $twitter;
+		top: 0px;
+	}
+}
+
+.google {
+	background-color: $main_color;
+	a {
+		color: $bkg_color_lighter;
+	}
+	&:hover {
+		box-shadow: 0px -3px 0px 0px $google_highlight inset;
+		outline: 0 6px $main_color_dark;
+		background-color: $google;
+	}
+	&:active {
+		background-color: $google;
+		top: 0px;
+	}
+}
+
+
 // CIRCULAR BUTTONS
 
 .circle_btn_main {
@@ -65,7 +116,7 @@
 	position: relative;
 	z-index: 1;
 	color: $bkg_color_lighter;
-	background: $main_color_halftransparent; //main colour accent
+	background: $main_color; //main colour accent
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
@@ -97,7 +148,7 @@
 		opacity: 0;
 	}
 	&:hover {
-		background: $main_color;
+		background: $main_color_accent;
 		color: $bkg_color_lighter;
 		&:after {
 			-webkit-transform: scale(1);
@@ -110,7 +161,7 @@
 }
 
 .text_below {
-	color: $main_color_halftransparent;
+	color: $main_color;
 	font-size: 18px;
 	margin-top: 30px;
 }
@@ -123,7 +174,7 @@
 }
 
 
-// ALTERNATIVE CIRCLE BUTTONS
+// SMALL CIRCLE BUTTONS
 
 .circle_btn_small {
 	display: inline-block;
@@ -137,7 +188,7 @@
 	position: relative;
 	z-index: 1;
 	color: $bkg_color_lighter;
-	background: rgba(235, 151, 78, 0.6); //main colour accent
+	background: $main_color_opp_halftransparent; //main colour accent
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
@@ -201,7 +252,7 @@
 	position: relative;
 	z-index: 1;
 	color: $bkg_color_lighter;
-	background: rgba(235, 151, 78, 0.6); //main colour accent
+	background: $main_color_opp; //main colour accent
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
@@ -250,56 +301,3 @@
 	font-size: 12px;
 	margin-top: 20px;
 }
-
-
-
-// SOCIAL BUTTONS
-
-.facebook {
-	background-color: $main_color;
-	a {
-		color: $bkg_color_lighter;
-	}
-	&:hover {
-		box-shadow: 0px -3px 0px 0px $facebook_highlight inset;
-		outline: 0 6px $main_color_dark;
-		background-color: $facebook;
-	}
-	&:active {
-		background-color: $facebook;
-		top: 0px;
-	}
-}
-
-.twitter {
-	background-color: $main_color;
-	a {
-		color: $bkg_color_lighter;
-	}
-	&:hover {
-		box-shadow: 0px -3px 0px 0px $twitter_highlight inset;
-		outline: 0 6px $main_color_dark;
-		background-color: $twitter;
-	}
-	&:active {
-		background-color: $twitter;
-		top: 0px;
-	}
-}
-
-.google {
-	background-color: $main_color;
-	a {
-		color: $bkg_color_lighter;
-	}
-	&:hover {
-		box-shadow: 0px -3px 0px 0px $google_highlight inset;
-		outline: 0 6px $main_color_dark;
-		background-color: $google;
-	}
-	&:active {
-		background-color: $google;
-		top: 0px;
-	}
-}
-

@@ -1,29 +1,35 @@
+
+<!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>matloughnane</title>
+	<link href="assets/css/styles.css" rel="stylesheet" media="all">
+</head>
 
-    <head>
-        <title>Two-pane navigation</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-		<script href="assets/js/jquery.min.js"></script>
-		<script href="assets/js/jquery.nav.js"></script>
-    </head>
+<body>
 
-    <body>
+	<div class="sidebar">
+		<ul id="nav">
+			<li class="current"><a href="#intro">Intro</a></li>
+			<li><a href="#usage">Usage</a></li>
+			<li><a href="#options">Options</a></li>
+			<li><a href="#examples">Examples</a></li>
+		</ul>
+	</div>
 
-	<ul id="nav">
-		<li class="current"><a href="#intro">Intro</a></li>
-		<li><a href="#usage">Usage</a></li>
-		<li><a href="#options">Options</a></li>
-		<li><a href="#examples">Examples</a></li>
-	</ul>
 
+	<a class="up_btn" href="#top">Back to top</a>
+	
+	<a id="top"></a>
 	<div id="container">
-		<div class="section" id="intro">
+		<div class="section red" id="intro">
 			<h1>jQuery One Page Nav</h1>
 
 			<p>A lightweight jQuery plugin for the navigation on one-page sites. Adds smooth scrolling when clicking on the navigation and automatically selects the correct navigation items as you are scrolling through the different sections.</p>
 		</div>
 
-		<div class="section" id="usage">
+		<div class="section blue" id="usage">
 			<h2>Usage</h2>
 
 			<pre>$(document).ready(function() {
@@ -39,7 +45,7 @@
 &lt;/ul></pre>
 		</div>
 
-		<div class="section" id="options">
+		<div class="section red" id="options">
 			<h2>Options</h2>
 
 			<ul>
@@ -55,7 +61,7 @@
 			</ul>
 		</div>
 
-		<div class="section" id="examples">
+		<div class="section blue" id="examples">
 			<h2>Examples</h2>
 
 			<ul>
@@ -66,29 +72,13 @@
 		</div>
 	</div>
 
-
-<script>
-	$(document).ready(function() {
-		$('#nav').onePageNav({
-		    currentClass: 'current',
-		    changeHash: false,
-		    scrollSpeed: 750,
-		    scrollThreshold: 0.5,
-		    filter: '',
-		    easing: 'swing',
-		    begin: function() {
-		        //I get fired when the animation is starting
-		    },
-		    end: function() {
-		        //I get fired when the animation is ending
-		    },
-		    scrollChange: function($currentListItem) {
-		        //I get fired when you enter a section and I pass the list item of the section
-		    }
+	<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+	<!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+	<script src="assets/js/jquery.nav.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
 		});
-	});
-</script>
-
-    </body>
-
+	</script>
+</body>
 </html>

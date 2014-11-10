@@ -1,0 +1,135 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arranmore Fast Ferry</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+
+    <script src="assets/js/output.min.js"></script>
+
+<!--     SCRIPT FOR FERRY TIMES -->
+    <script src="assets/js/ferry_times.js"></script>
+
+<!--     SCRIPT FOR CURRENT TIME -->
+    <script src="assets/js/current_time.js"></script>
+
+<!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+<body class="wrapper push bg_image">
+
+<div class="wrap bg_overlay">
+
+<!-- HIDDEN PANEL -->
+<!-- 	<a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a> -->
+
+	<nav id="menu" class="panel" role="navigation">
+	      <ul>
+	          <li><a class="nav_link" href="#"><i class="fa fa-clock-o"></i>times</a></li>
+	          <li><a class="nav_link" href="#"><i class="fa fa-phone-square"></i>contact</a></li>
+	          <li><a class="nav_link" href="#"><i class="fa fa-ticket"></i>tickets</a></li>
+	          <li><a class="nav_link" href="#"><i class="fa fa-sun-o"></i>weather</a></li>
+	          <li><a class="nav_link" href="#"><i class="fa fa-camera-retro"></i>photos</a></li>
+	      </ul>
+	</nav>
+<!-- END HIDDEN PANEL -->
+
+<div class="grid">
+	<div class="unit one-third center-on-mobiles fadeIn">
+		<h1 class="align-center">LIVE <br> UPDATE</h1>
+	</div>
+	<div class="unit two-thirds align-center fadeIn">
+		<a href="#" class="circle_btn_small"><i class="fa fa-clock-o"></i><div class="text_below">times</div></a>
+		<a href="#" class="circle_btn_small"><i class="fa fa-phone-square"></i><div class="text_below">contact</div></a>
+		<a href="#" class="circle_btn_small"><i class="fa fa-ticket"></i><div class="text_below">tickets</div></a>
+		<a href="#" class="circle_btn_small"><i class="fa fa-sun-o"></i><div class="text_below">weather</div></a>
+		<a href="#" class="circle_btn_small"><i class="fa fa-camera-retro"></i><div class="text_below">photos</div></a>
+	</div>
+
+</div>
+
+
+<!-- GRID FOR FERRY TIMES -->
+<div class="grid">
+	<div class="unit half content_orange">
+		<div class="content align-center">
+			<span>Next Ferry Departing Burton Port: </span><span id="nextFerryDepartBurton" class="important_text"></span>
+		</div>
+	</div>
+	<div class="unit half content_blue">
+		<div class="content align-center">
+<!-- 			<span>Current Time: </span><span id="clockbox"></span> <br> -->
+			<span>Next Ferry Departing Arranmore: </span><span id="nextFerryDepartArranmore" class="important_text"></span>
+		</div>
+	</div>
+</div>
+<!-- END GRID FOR FERRY TIMES -->
+
+<div class="grid">
+	<div class="unit whole content_overlay">
+		<div class="content">
+			<h3>About Arranmore Fast Ferry</h3>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque nunc eget erat luctus, id faucibus ligula interdum. Integer condimentum lacus quam, ac tincidunt nisi convallis vel. Nam in eros blandit, rhoncus nulla eget, suscipit libero. Etiam tristique lectus felis, quis tincidunt turpis ultrices quis. Nullam fringilla aliquam sodales. Curabitur pharetra leo eget euismod bibendum. Vestibulum vitae nunc commodo neque placerat hendrerit nec vel purus. Praesent mattis neque augue.</span>
+			<button class="btn dark_highlight pull-right">Button</button> 
+		</div>
+	</div>
+</div>
+
+<div class="grid">
+	<div class="unit half content_blue">
+		<div class="content">
+			<h3>Quick Look</h3>
+			<h4>Contact Details</h4>
+			<p>Etiam tristique lectus felis, quis tincidunt turpis ultrices quis. Nullam fringilla aliquam sodales. Curabitur pharetra leo eget euismod bibendum. Vestibulum vitae nunc commodo neque placerat hendrerit nec vel purus. Praesent mattis neque augue.</p>
+			<h4>Like, Comment Share!</h4>
+			<a class="btn share_btn icon-twitter" target="_blank" href="#"><i class="fa fa-twitter"></i><span class="hidethis_btn">  Twitter</span></a>
+        	<a class="btn share_btn icon-facebook" target="_blank" href="#"><i class="fa fa-facebook"></i><span class="hidethis_btn">  Facebook</span></a>
+        	<a class="btn share_btn icon-gplus" target="_blank" href="#"><i class="fa fa-google-plus"></i><span class="hidethis_btn">  Google+</span></a>
+		</div>
+	</div>
+	<div class="unit half content_orange">
+		<div class="content">
+			<h3>Other Things About Arranmore Fast Ferry</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque nunc eget erat luctus, id faucibus ligula interdum. Integer condimentum lacus quam, ac tincidunt nisi convallis vel. Nam in eros blandit, rhoncus nulla eget, suscipit libero.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque nunc eget erat luctus, id faucibus ligula interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<button class="btn dark_highlight pull-right">Button</button>
+		</div>
+	</div>
+</div>
+
+<div class="grid">
+	<div class="unit whole content_overlay align-center">
+		<div class="">
+			<span class="footer_text">&copy; Arranmore Fast Ferry</span>
+		</div>
+	</div>
+</div>
+
+</div>
+<!-- SCRIPTS -->
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+
+
+<!-- FERRY TIMES SCRIPT STARTER -->
+
+<script type="text/javascript">
+	function start() {
+	  // GetClock();
+	  GetNextFerry();
+	}	
+	window.onload = start;
+</script>
+
+</body>
+</html>

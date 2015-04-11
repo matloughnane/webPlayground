@@ -1,0 +1,125 @@
+// * {
+// 	margin: 0px;
+// 	padding: 0px;
+// }
+
+body {
+	font-family: "Droid Sans", sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	color: $text_light;
+	background: $bkg_dark;
+}
+
+::selection {
+  background: $secondary_light;
+}
+::-moz-selection {
+  background: $secondary_light; 
+}
+
+h1, h2, h3, {
+	-webkit-margin-before: 0.25em;
+	-webkit-margin-after: 0.25em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: 550;
+	-webkit-margin-before: 0.15em;
+	-webkit-margin-after: 0.15em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: $primary_light;
+	&:hover {
+		color: $primary;
+	}
+}
+
+// ====================================================
+// ================= HEADER
+// ====================================================
+
+header {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+header h1 {
+	font-family: "Oswald";
+	color: $primary_light;
+	letter-spacing: 5px;
+	line-height: 80px;
+	// text-shadow: 0px 2px 3px $white;
+	text-transform: uppercase;
+	font-size: 4.5em;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+// ====================================================
+// ================= FOOTER
+// ====================================================
+
+footer {
+	margin: 10px;
+}
+
+.copyright {
+	font-size: 0.75em;
+}
+
+// ====================================================
+// ================= CARDS
+// ====================================================
+
+.card {
+	border-radius: $border-radius;
+	margin: 15px !important;
+	padding: 15px;
+}
+
+.light {
+	background: $bkg_light;
+}
+
+.card_work {
+	border-radius: $border-radius;
+	margin: 15px !important;
+	.description {
+		padding: 15px 15px !important;
+	}
+}
+
+// ====================================================
+// ================= SHADOWS
+// ====================================================
+
+.shadow1 {
+	box-shadow: $shadow1;;
+}
+.shadow2 {
+	box-shadow: $shadow2;;
+}
+.shadow3 {
+	box-shadow: $shadow3;;
+}
+.shadow4 {
+	box-shadow: $shadow4;;
+}
+.shadow5 {
+	box-shadow: $shadow5;;
+}

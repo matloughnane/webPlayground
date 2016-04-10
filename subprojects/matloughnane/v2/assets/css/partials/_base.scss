@@ -1,0 +1,201 @@
+html {
+  height: 100%;
+}
+body {
+  background: $back;
+  padding: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	height: 100% !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  width: 100%;
+  float: left;
+}
+
+h1 {
+  margin-top: 20px;
+  color: $black_off;
+  margin-bottom: 5px;
+  font-size: 70px;
+  letter-spacing: -4px;
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 10px;
+  color: $black_off;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 10px;
+  color: $black_off;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  &.margin_top {
+    margin-top: 30px;
+  }
+  a {
+    font-weight: 600;
+    color: $white_off;
+  }
+}
+
+.btn {
+  font-weight: 800;
+  border: none;
+  background: none;
+  padding: 15px 20px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: $border_radius;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+  background-color: $white_off !important;
+  color: $black_off !important;
+  box-shadow: 0px -3px 0px 0px $blue_light inset;
+  &:active {
+    background-color: $blue_light !important;
+  }
+}
+
+.btn_blue {
+  padding: 15px 20px;
+  background-color: $blue_dark !important;
+  color: $white_off !important;
+  box-shadow: 0px -3px 0px 0px $blue_light inset;
+  &:active {
+    background-color: $blue_light !important;
+  }
+}
+.btn_red {
+  padding: 15px 20px;
+  background-color: $red_dark !important;
+  color: $white_off !important;
+  box-shadow: 0px -3px 0px 0px $red_light inset;
+  &:active {
+    background-color: $red_light !important;
+  }
+}
+
+img {
+  max-width: 80%;
+}
+
+.page1, .page3 {
+  background: $red url("../img/red_light.png") no-repeat right top;
+  color: $white_off;
+  h1, h2, p {
+    color: $white_off;
+  }
+}
+
+.page2, .page4 {
+  background: $blue url("../img/blue_light.png") no-repeat right top;
+  color: $black_off;
+  h1, h2, p {
+    color: $black_off;
+  }
+}
+
+
+.page5 {
+  background: $white_off url("../img/grey_light.png") no-repeat right top;
+  h1 {
+    margin-top: 20%;
+  }
+}
+
+.page1 {
+  h1 {
+    margin-top: 30%;
+  }
+}
+
+.page2 {
+  h1 {
+    margin-top: 10%;
+  }
+}
+
+.page3 {
+  h1 {
+    margin-top: 10%;
+    margin-bottom: 50px;
+  }
+}
+
+.page4 {
+  h1 {
+    margin-top: 15%;
+  }
+}
+
+.half {
+  text-align: left;
+}
+
+.apple_badge, .google_badge {
+  width: 180px;
+}
+
+.buffer {
+  height: 150px;
+}
+
+@media screen and (max-width: $medium_screen) {
+  img {
+    width: 50%;
+    &.design {
+      width: 80%;
+    }
+  }
+
+  .page1 {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .page2 h1, .page3 h1, .page4 h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .wrapper {
+    height: auto !important;
+    margin: 0 auto; 
+    overflow: visible;
+  }
+
+}
+
+
+

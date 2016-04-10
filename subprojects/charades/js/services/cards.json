@@ -1,0 +1,104 @@
+[
+  {
+    "card": "Avengers: Age of Ultron",
+    "category": "movies",
+    "difficulty": 1,
+    "card_index": 0
+  },
+  {
+    "card": "Ant Man",
+    "category": "movies",
+    "difficulty": 1,
+    "card_index": 1
+  },
+  {
+    "card": "Mad Max",
+    "category": "movies",
+    "difficulty": 1,
+    "card_index": 2
+  },
+  {
+    "card": "Mission Impossible",
+    "category": "movies",
+    "difficulty": 1,
+    "card_index": 3
+  },
+  {
+    "card": "Guardians of the Galaxy",
+    "category": "movies",
+    "difficulty": 1,
+    "card_index": 4
+  },
+  {
+    "card": "World War Z",
+    "category": "movies",
+    "difficulty": 2,
+    "card_index": 5
+  },
+  {
+    "card": "London",
+    "category": "geography",
+    "difficulty": 1,
+    "card_index": 6
+  },
+  {
+    "card": "Paris",
+    "category": "geography",
+    "difficulty": 1,
+    "card_index": 7
+  },
+  {
+    "card": "New York",
+    "category": "geography",
+    "difficulty": 2,
+    "card_index": 8
+  },
+  {
+    "card": "Chicago",
+    "category": "geography",
+    "difficulty": 1,
+    "card_index": 9
+  },
+  {
+    "card": "Dubai",
+    "category": "geography",
+    "difficulty": 2,
+    "card_index": 10
+  },
+  {
+    "card": "Superman",
+    "category": "characters",
+    "difficulty": 1,
+    "card_index": 11
+  },
+  {
+    "card": "Batman",
+    "category": "characters",
+    "difficulty": 1,
+    "card_index": 12
+  },
+  {
+    "card": "Popeye",
+    "category": "characters",
+    "difficulty": 3,
+    "card_index": 13
+  },
+  {
+    "card": "James Bond",
+    "category": "characters",
+    "difficulty": 2,
+    "card_index": 14
+  },
+  {
+    "card": "Mary Poppins",
+    "category": "characters",
+    "difficulty": 1,
+    "card_index": 15
+  },
+  {
+    "card": "Mickey Mouse",
+    "category": "characters",
+    "difficulty": 2,
+    "card_index": 20
+  }
+]

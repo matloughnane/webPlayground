@@ -1,0 +1,25 @@
+
+.timer_5s {
+	width: 0px;
+	/*margin: 0 auto;*/
+	background-color: #F4D03F;
+	animation-name: stretch;
+	animation-duration: 5s; 
+	animation-timing-function: linear; 
+	animation-delay: 0;
+	/*animation-direction: alternate;*/
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+@keyframes stretch {
+	0% {
+		width: 0%;
+		background-color: #F4D03F;
+	}
+	100% {
+		background-color: #F22613;
+		width: 100%;
+	}
+}

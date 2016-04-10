@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Include the core AngularJS library -->
+    <script src="js/angular.min.js"></script>
+    <!-- Include the AngularJS routing library -->
+    <script src="js/angular-route.min.js"></script>
+    <!-- Include the AngularJS animation library -->
+    <script src="js/angular-animate.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+  </head>
+  <body ng-app="charadesGame">
+
+      <div ng-view class="scope"></div>
+      
+      <!-- <div class="container">
+        <a href="/#/">
+          charades
+        </a>
+      </div>
+      <div class="container">
+        <a href="/#/play/">
+          play button
+        </a>
+      </div> -->
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/PhotoController.js"></script>
+    <script src="js/controllers/GameController.js"></script>
+    <script src="js/controllers/GameOverController.js"></script>
+
+    <!-- Services -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/services/photos.js"></script>
+    <script src="js/services/cards.js"></script>
+
+  </body>
+</html>
